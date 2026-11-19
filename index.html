@@ -1,0 +1,4765 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Executive Partner Workspace & Global Luxury Brand Portfolio — Global Business Partnership (247+ Brands In-House). Developed by Microsoft." />
+  <meta property="og:title" content="Global Business Partnership | Executive Partner Workspace" />
+  <meta property="og:description" content="Explore the Global Luxury & Lifestyle Brand Portfolio of Global Business Partnership (247+ Brands In-House) with direct official brand portals." />
+  <meta property="og:type" content="website" />
+  <title>Global Business Partnership | Executive Partner Workspace — Microsoft</title>
+
+  <style>
+    /* ===================================================================== */
+    /* 1. ZERO-DEPENDENCY MICROSOFT FLUENT DESIGN SYSTEM                     */
+    /* ===================================================================== */
+    :root {
+      --ms-blue: #0078D4;
+      --ms-blue-hover: #106EBE;
+      --ms-blue-deep: #004578;
+      --ms-cyan: #00B7C3;
+      --ms-gold: #C59B27;
+      --ms-ink: #201F1E;
+      --ms-subtle: #605E5C;
+      --ms-border: #E1DFDD;
+      --ms-surface: #F3F2F1;
+      --ms-canvas: #FAF9F8;
+      --ms-dark: #0B1220;
+      --ms-emerald: #107C41;
+      --ms-emerald-hover: #0B6A37;
+      --ms-amber: #D97706;
+      --ms-danger: #C50F1F;
+      --shadow-2: 0 1.6px 3.6px rgba(0, 0, 0, 0.06), 0 0.3px 0.9px rgba(0, 0, 0, 0.04);
+      --shadow-8: 0 3.2px 7.2px rgba(0, 0, 0, 0.08), 0 0.6px 1.8px rgba(0, 0, 0, 0.06);
+      --shadow-16: 0 8px 20px rgba(0, 0, 0, 0.10), 0 2px 6px rgba(0, 0, 0, 0.06);
+      --shadow-64: 0 25.6px 57.6px rgba(0, 0, 0, 0.16), 0 4.8px 14.4px rgba(0, 0, 0, 0.09);
+      --radius-sm: 8px;
+      --radius-md: 12px;
+      --radius-lg: 18px;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", Arial, sans-serif;
+      color: var(--ms-ink);
+      background-color: var(--ms-canvas);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    body {
+      min-height: 100vh;
+      overflow-x: hidden;
+      line-height: 1.5;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button, input, select, textarea {
+      font-family: inherit;
+      font-size: inherit;
+    }
+
+    button {
+      cursor: pointer;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* ===================================================================== */
+    /* 2. ULTRA-MODERN, MINIMALIST MICROSOFT FLUENT LOGIN GATEWAY            */
+    /* ===================================================================== */
+    #loginGateway {
+      position: fixed;
+      inset: 0;
+      z-index: 9999;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      overflow-y: auto;
+      padding: 20px;
+      background:
+        radial-gradient(circle at 18% 20%, rgba(0, 120, 212, 0.14), transparent 46%),
+        radial-gradient(circle at 82% 80%, rgba(0, 183, 195, 0.11), transparent 48%),
+        linear-gradient(145deg, #F5F7FA 0%, #EBF3FC 50%, #F8F9FA 100%);
+    }
+
+    .login-topbar {
+      width: 100%;
+      max-width: 1180px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .ms-brand-lockup {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--ms-ink);
+    }
+
+    .ms-divider {
+      color: var(--ms-border);
+    }
+
+    .ms-sub-tag {
+      font-size: 12px;
+      font-weight: 500;
+      color: var(--ms-subtle);
+    }
+
+    .live-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 5px 12px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.9);
+      border: 1px solid var(--ms-border);
+      font-size: 11.5px;
+      font-weight: 700;
+      color: var(--ms-blue);
+    }
+
+    .pulse-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: #10B981;
+      box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.2);
+    }
+
+    .login-card-wrap {
+      width: 100%;
+      max-width: 480px;
+      margin: auto;
+      padding: 20px 0;
+    }
+
+    .login-card {
+      background: rgba(255, 255, 255, 0.96);
+      backdrop-filter: blur(22px);
+      -webkit-backdrop-filter: blur(22px);
+      border: 1px solid #FFFFFF;
+      border-radius: 20px;
+      box-shadow: var(--shadow-64);
+      padding: 32px 28px;
+    }
+
+    /* Partner With Alliance Strip on Login Page */
+    .partner-with-box {
+      margin-top: 22px;
+      padding-top: 18px;
+      border-top: 1px solid var(--ms-border);
+    }
+
+    .partner-with-label {
+      font-size: 11px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--ms-subtle);
+      text-align: center;
+      margin-bottom: 12px;
+    }
+
+    .partner-with-rows {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .partner-with-row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 9px;
+    }
+
+    .partner-with-row.single {
+      grid-template-columns: 1fr;
+      max-width: 148px;
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    .alliance-logo-card {
+      padding: 8px 6px 6px;
+      border-radius: 10px;
+      background: transparent;
+      border: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+      box-shadow: none;
+      transition: transform 0.15s ease, opacity 0.15s ease;
+    }
+
+    .alliance-logo-card:hover {
+      transform: translateY(-2px);
+      opacity: 0.88;
+    }
+
+    .alliance-logo-card svg {
+      height: 26px;
+      width: auto;
+      max-width: 100%;
+      display: block;
+    }
+
+    .alliance-logo-sub {
+      font-size: 9px;
+      font-weight: 700;
+      color: var(--ms-subtle);
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+    }
+
+    .login-identity {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 24px;
+    }
+
+    .avatar-circle {
+      width: 48px;
+      height: 48px;
+      border-radius: 14px;
+      background: linear-gradient(135deg, var(--ms-blue) 0%, var(--ms-blue-deep) 100%);
+      color: #FFFFFF;
+      font-weight: 800;
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      box-shadow: var(--shadow-8);
+    }
+
+    .login-identity h1 {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--ms-ink);
+      letter-spacing: -0.01em;
+    }
+
+    .login-identity p {
+      font-size: 12.5px;
+      color: var(--ms-subtle);
+      margin-top: 2px;
+    }
+
+    /* Segmented Fluent Tab Switcher */
+    .login-tabs {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4px;
+      padding: 4px;
+      border-radius: 10px;
+      background: var(--ms-surface);
+      border: 1px solid var(--ms-border);
+      margin-bottom: 24px;
+    }
+
+    .login-tab-btn {
+      padding: 9px 12px;
+      border-radius: 7px;
+      border: none;
+      background: transparent;
+      color: var(--ms-subtle);
+      font-size: 13px;
+      font-weight: 600;
+      transition: all 0.15s ease;
+    }
+
+    .login-tab-btn.active {
+      background: #FFFFFF;
+      color: var(--ms-ink);
+      box-shadow: var(--shadow-2);
+    }
+
+    .login-panel-desc {
+      font-size: 13.5px;
+      color: var(--ms-subtle);
+      line-height: 1.55;
+      margin-bottom: 22px;
+    }
+
+    .btn-ms-primary {
+      width: 100%;
+      padding: 13px 18px;
+      border-radius: 9px;
+      border: none;
+      background: var(--ms-blue);
+      color: #FFFFFF;
+      font-size: 14px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      box-shadow: var(--shadow-2);
+      transition: background-color 0.15s ease, transform 0.1s ease;
+    }
+
+    .btn-ms-primary:hover {
+      background: var(--ms-blue-hover);
+    }
+
+    .btn-ms-primary:active {
+      transform: scale(0.99);
+    }
+
+    .password-field-group {
+      margin-bottom: 16px;
+    }
+
+    .password-label {
+      display: block;
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--ms-ink);
+      margin-bottom: 6px;
+    }
+
+    .password-input-wrap {
+      position: relative;
+      display: flex;
+      align-items: center;
+    }
+
+    .ms-input {
+      width: 100%;
+      padding: 11px 13px;
+      border-radius: 9px;
+      border: 1px solid var(--ms-border);
+      background: #FFFFFF;
+      color: var(--ms-ink);
+      font-size: 13.5px;
+      outline: none;
+      transition: border-color 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    .ms-input:focus {
+      border-color: var(--ms-blue);
+      box-shadow: 0 0 0 3px rgba(0, 120, 212, 0.14);
+    }
+
+    .btn-toggle-eye {
+      position: absolute;
+      right: 10px;
+      background: none;
+      border: none;
+      color: var(--ms-subtle);
+      font-size: 11.5px;
+      font-weight: 600;
+      padding: 4px 6px;
+    }
+
+    .btn-toggle-eye:hover {
+      color: var(--ms-ink);
+    }
+
+    #partnerErrorMsg {
+      display: none;
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--ms-danger);
+      margin-bottom: 12px;
+    }
+
+    .login-footer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      flex-wrap: wrap;
+      text-align: center;
+      font-size: 12px;
+      color: var(--ms-subtle);
+      padding: 6px 0;
+    }
+
+    /* ===================================================================== */
+    /* 3. TOP NAVBAR & TOP-RIGHT PARTNER STUDIO (EDIT MODE) CONTROLS         */
+    /* ===================================================================== */
+    .top-navbar {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(255, 255, 255, 0.96);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--ms-border);
+    }
+
+    .navbar-inner {
+      min-height: 58px;
+      padding: 8px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .nav-left {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      min-width: 0;
+    }
+
+    .nine-dot-btn {
+      width: 30px;
+      height: 30px;
+      border-radius: 6px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--ms-subtle);
+      flex-shrink: 0;
+    }
+
+    .nav-title {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--ms-ink);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .nav-links {
+      display: none;
+      align-items: center;
+      gap: 18px;
+      font-size: 12.5px;
+      font-weight: 600;
+      color: var(--ms-subtle);
+    }
+
+    .nav-links a:hover {
+      color: var(--ms-blue);
+    }
+
+    @media (min-width: 1120px) {
+      .nav-links {
+        display: flex;
+      }
+    }
+
+    .nav-right {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      flex-wrap: wrap;
+    }
+
+    .role-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 5px 10px;
+      border-radius: 999px;
+      background: var(--ms-surface);
+      border: 1px solid var(--ms-border);
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--ms-ink);
+    }
+
+    .role-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--ms-blue);
+    }
+
+    /* Exclusive Partner Edit Controls in Top-Right */
+    #partnerStudioControls {
+      display: none;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .btn-edit-mode {
+      padding: 6px 12px;
+      border-radius: 7px;
+      border: 1px solid #F59E0B;
+      background: #FFFBEB;
+      color: #92400E;
+      font-size: 12px;
+      font-weight: 700;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      transition: all 0.15s ease;
+    }
+
+    .btn-edit-mode.active {
+      background: #D97706;
+      border-color: #B45309;
+      color: #FFFFFF;
+      box-shadow: 0 0 0 3px rgba(217, 119, 6, 0.22);
+    }
+
+    .btn-studio-drawer {
+      padding: 6px 11px;
+      border-radius: 7px;
+      border: 1px solid #0F172A;
+      background: #0F172A;
+      color: #FFFFFF;
+      font-size: 12px;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .btn-studio-drawer:hover {
+      background: #1E293B;
+    }
+
+    .btn-sm-blue {
+      padding: 6px 12px;
+      border-radius: 7px;
+      border: none;
+      background: var(--ms-blue);
+      color: #FFFFFF;
+      font-size: 12px;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      transition: background-color 0.15s ease;
+    }
+
+    .btn-sm-blue:hover {
+      background: var(--ms-blue-hover);
+    }
+
+    .btn-sm-outline {
+      padding: 6px 11px;
+      border-radius: 7px;
+      border: 1px solid var(--ms-border);
+      background: #FFFFFF;
+      color: var(--ms-ink);
+      font-size: 12px;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .btn-sm-outline:hover {
+      border-color: var(--ms-blue);
+      background: var(--ms-surface);
+    }
+
+    /* Live Edit Mode Banner & Inline Editable Highlights */
+    #editModeRibbon {
+      display: none;
+      background: linear-gradient(90deg, #92400E 0%, #B45309 50%, #92400E 100%);
+      color: #FFFFFF;
+      font-size: 12px;
+      padding: 8px 0;
+      border-bottom: 1px solid #78350F;
+    }
+
+    .ribbon-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .ribbon-actions {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .btn-ribbon-save {
+      padding: 4px 12px;
+      border-radius: 6px;
+      border: none;
+      background: #FFFFFF;
+      color: #78350F;
+      font-size: 11.5px;
+      font-weight: 800;
+    }
+
+    body.edit-mode-active [data-editable] {
+      outline: 1.5px dashed #D97706;
+      outline-offset: 3px;
+      border-radius: 4px;
+      cursor: text;
+      transition: background-color 0.15s ease;
+    }
+
+    body.edit-mode-active [data-editable]:focus {
+      outline: 2px solid var(--ms-blue);
+      background-color: rgba(255, 251, 235, 0.95);
+      color: var(--ms-ink);
+    }
+
+    .card-edit-toolbar {
+      display: none;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 6px;
+      padding: 8px 12px;
+      background: #FFFBEB;
+      border-bottom: 1px solid #FDE68A;
+    }
+
+    body.edit-mode-active .card-edit-toolbar {
+      display: flex;
+    }
+
+    .btn-card-edit {
+      padding: 4px 10px;
+      border-radius: 6px;
+      border: 1px solid #D97706;
+      background: #FFFFFF;
+      color: #92400E;
+      font-size: 11px;
+      font-weight: 700;
+    }
+
+    .btn-card-edit:hover {
+      background: #FEF3C7;
+    }
+
+    .btn-card-del {
+      padding: 4px 9px;
+      border-radius: 6px;
+      border: 1px solid #FCA5A5;
+      background: #FEF2F2;
+      color: #B91C1C;
+      font-size: 11px;
+      font-weight: 700;
+    }
+
+    .btn-add-item {
+      display: none;
+      padding: 7px 13px;
+      border-radius: 8px;
+      border: 1px solid #D97706;
+      background: #FFFBEB;
+      color: #92400E;
+      font-size: 12px;
+      font-weight: 700;
+      align-items: center;
+      gap: 5px;
+    }
+
+    body.edit-mode-active .btn-add-item {
+      display: inline-flex;
+    }
+
+    /* ===================================================================== */
+    /* 4. HERO, BRAND HOUSES, CATEGORIES & FLAGSHIP PRODUCTS                 */
+    /* ===================================================================== */
+    .hero-section {
+      background:
+        radial-gradient(circle at 86% 18%, rgba(0, 120, 212, 0.10), transparent 46%),
+        radial-gradient(circle at 12% 84%, rgba(197, 155, 39, 0.09), transparent 44%),
+        linear-gradient(180deg, #FFFFFF 0%, #F5F9FE 100%);
+      border-bottom: 1px solid var(--ms-border);
+      padding: 44px 0 52px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 28px;
+      align-items: center;
+    }
+
+    @media (min-width: 960px) {
+      .hero-grid {
+        grid-template-columns: 7fr 5fr;
+        gap: 36px;
+      }
+    }
+
+    .hero-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 14px;
+      border-radius: 999px;
+      background: #FFFFFF;
+      border: 1px solid #CFE4FA;
+      box-shadow: var(--shadow-2);
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--ms-blue);
+      margin-bottom: 16px;
+    }
+
+    .gold-star {
+      color: var(--ms-gold);
+    }
+
+    .hero-title {
+      font-size: clamp(28px, 4.4vw, 44px);
+      font-weight: 800;
+      line-height: 1.14;
+      letter-spacing: -0.02em;
+      color: var(--ms-ink);
+    }
+
+    .hero-title span {
+      color: var(--ms-blue);
+    }
+
+    .hero-desc {
+      font-size: 15px;
+      color: var(--ms-subtle);
+      margin-top: 14px;
+      max-width: 640px;
+      line-height: 1.65;
+    }
+
+    #partnerModeBanner {
+      display: none;
+      margin-top: 18px;
+      padding: 14px 16px;
+      border-radius: var(--radius-md);
+      background: #EBF5FF;
+      border: 1px solid rgba(0, 120, 212, 0.35);
+      max-width: 640px;
+    }
+
+    #partnerModeBanner strong {
+      display: block;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--ms-blue);
+      margin-bottom: 3px;
+    }
+
+    #partnerModeBanner p {
+      font-size: 12.5px;
+      color: var(--ms-ink);
+    }
+
+    .stats-row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin-top: 24px;
+      max-width: 560px;
+    }
+
+    .stat-box {
+      background: #FFFFFF;
+      border: 1px solid var(--ms-border);
+      border-radius: var(--radius-md);
+      padding: 14px 16px;
+      box-shadow: var(--shadow-2);
+    }
+
+    .stat-num {
+      font-size: clamp(20px, 2.8vw, 26px);
+      font-weight: 800;
+      color: var(--ms-blue);
+      line-height: 1.15;
+    }
+
+    .stat-num.dark {
+      color: var(--ms-ink);
+    }
+
+    .stat-num.green {
+      color: var(--ms-emerald);
+    }
+
+    .stat-label {
+      font-size: 11.5px;
+      font-weight: 600;
+      color: var(--ms-subtle);
+      margin-top: 3px;
+    }
+
+    /* Executive Spotlight Card */
+    .exec-card {
+      background: #FFFFFF;
+      border: 1px solid var(--ms-border);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-16);
+      padding: 24px;
+    }
+
+    .exec-card-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 18px;
+    }
+
+    .exec-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 5px 11px;
+      border-radius: 999px;
+      background: #EBF5FF;
+      border: 1px solid #BFDBFE;
+      font-size: 11px;
+      font-weight: 800;
+      color: var(--ms-blue-deep);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    .blue-tick-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background: var(--ms-blue);
+      color: #FFFFFF;
+      flex-shrink: 0;
+    }
+
+    .exec-profile-row {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 16px;
+    }
+
+    .avatar-lg {
+      width: 58px;
+      height: 58px;
+      border-radius: 16px;
+      background: linear-gradient(135deg, var(--ms-blue) 0%, var(--ms-blue-deep) 100%);
+      color: #FFFFFF;
+      font-size: 20px;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      box-shadow: var(--shadow-8);
+    }
+
+    .exec-profile-row h2 {
+      font-size: 20px;
+      font-weight: 800;
+      color: var(--ms-ink);
+    }
+
+    .b2b-code-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      margin-top: 4px;
+      padding: 3px 10px;
+      border-radius: 6px;
+      background: var(--ms-surface);
+      border: 1px solid var(--ms-border);
+      font-size: 12px;
+      font-weight: 800;
+      color: var(--ms-blue);
+      letter-spacing: 0.04em;
+    }
+
+    /* Mini World Map with Blinkers inside Executive Card */
+    .exec-world-map-box {
+      position: relative;
+      border-radius: 12px;
+      overflow: hidden;
+      background: radial-gradient(circle at 50% 45%, #0F2342 0%, #070D19 100%);
+      border: 1px solid #1E293B;
+      padding: 10px;
+    }
+
+    .exec-map-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 10.5px;
+      font-weight: 700;
+      color: #CBD5E1;
+      margin-bottom: 6px;
+    }
+
+    .exec-map-live {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 2px 7px;
+      border-radius: 999px;
+      background: rgba(16, 185, 129, 0.18);
+      color: #6EE7B7;
+      font-size: 10px;
+      font-weight: 800;
+    }
+
+    .mini-map-svg {
+      width: 100%;
+      height: 156px;
+      display: block;
+    }
+
+    @keyframes mapPing {
+      0% { r: 3; opacity: 0.95; }
+      75% { r: 10; opacity: 0; }
+      100% { r: 10; opacity: 0; }
+    }
+
+    .map-blinker-ring {
+      fill: none;
+      stroke: #38BDF8;
+      stroke-width: 1.5;
+      animation: mapPing 2.2s infinite ease-out;
+    }
+
+    .map-blinker-ring.india {
+      stroke: #FBBF24;
+    }
+
+    /* 3-Level Drill-Down Breadcrumb & Navigation Controls */
+    .drilldown-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+      padding: 12px 16px;
+      border-radius: var(--radius-md);
+      background: var(--ms-surface);
+      border: 1px solid var(--ms-border);
+      margin-bottom: 24px;
+    }
+
+    .breadcrumb-trail {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--ms-subtle);
+    }
+
+    .crumb-btn {
+      background: none;
+      border: none;
+      color: var(--ms-blue);
+      font-weight: 700;
+      padding: 2px 4px;
+      border-radius: 4px;
+    }
+
+    .crumb-btn:hover {
+      background: rgba(0, 120, 212, 0.1);
+      text-decoration: underline;
+    }
+
+    .crumb-current {
+      color: var(--ms-ink);
+      font-weight: 800;
+    }
+
+    .view-mode-pills {
+      display: inline-flex;
+      gap: 6px;
+    }
+
+    .btn-back-level {
+      padding: 6px 12px;
+      border-radius: 7px;
+      border: 1px solid var(--ms-blue);
+      background: #FFFFFF;
+      color: var(--ms-blue);
+      font-size: 12px;
+      font-weight: 700;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .btn-back-level:hover {
+      background: #EBF5FF;
+    }
+
+    .exec-profile-row {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 18px;
+    }
+
+    .avatar-lg {
+      width: 58px;
+      height: 58px;
+      border-radius: 16px;
+      background: linear-gradient(135deg, var(--ms-blue) 0%, var(--ms-blue-deep) 100%);
+      color: #FFFFFF;
+      font-size: 20px;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      box-shadow: var(--shadow-8);
+    }
+
+    .exec-profile-row h2 {
+      font-size: 19px;
+      font-weight: 700;
+      color: var(--ms-ink);
+    }
+
+    .exec-profile-row p {
+      font-size: 12.5px;
+      color: var(--ms-subtle);
+      margin-top: 2px;
+    }
+
+    .exec-profile-row .sub-blue {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--ms-blue);
+      margin-top: 3px;
+    }
+
+    .exec-meta-list {
+      border-top: 1px solid var(--ms-border);
+      padding-top: 14px;
+      margin-bottom: 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 9px;
+      font-size: 12.5px;
+    }
+
+    .exec-meta-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: var(--ms-subtle);
+    }
+
+    .exec-meta-item strong {
+      color: var(--ms-ink);
+      font-weight: 600;
+    }
+
+    .btn-wa-block {
+      width: 100%;
+      padding: 12px 16px;
+      border-radius: var(--radius-sm);
+      background: var(--ms-emerald);
+      color: #FFFFFF;
+      font-size: 13px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      border: none;
+      transition: background-color 0.15s ease;
+    }
+
+    .btn-wa-block:hover {
+      background: var(--ms-emerald-hover);
+    }
+
+    /* Sections */
+    .section-block {
+      padding: 52px 0;
+      border-bottom: 1px solid var(--ms-border);
+    }
+
+    .section-block.white {
+      background: #FFFFFF;
+    }
+
+    .section-block.canvas {
+      background: var(--ms-canvas);
+    }
+
+    .section-header {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-bottom: 28px;
+    }
+
+    @media (min-width: 768px) {
+      .section-header.row {
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: space-between;
+      }
+    }
+
+    .section-kicker {
+      font-size: 11.5px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--ms-blue);
+    }
+
+    .section-title {
+      font-size: clamp(22px, 3.2vw, 30px);
+      font-weight: 800;
+      color: var(--ms-ink);
+      letter-spacing: -0.015em;
+      margin-top: 3px;
+    }
+
+    .section-hint {
+      font-size: 13px;
+      color: var(--ms-subtle);
+    }
+
+    /* Brand Houses Grid */
+    .brands-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+
+    @media (min-width: 600px) {
+      .brands-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .brands-grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+
+    .brand-card-shell {
+      display: flex;
+      flex-direction: column;
+      background: var(--ms-canvas);
+      border: 1px solid var(--ms-border);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      box-shadow: var(--shadow-2);
+      transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+    }
+
+    .brand-card-shell:hover {
+      transform: translateY(-4px);
+      background: #FFFFFF;
+      border-color: var(--ms-blue);
+      box-shadow: 0 12px 24px rgba(0, 120, 212, 0.13);
+    }
+
+    .brand-card-link {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      flex: 1;
+      padding: 18px;
+    }
+
+    .brand-card-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      margin-bottom: 12px;
+    }
+
+    .brand-monogram {
+      height: 36px;
+      padding: 4px 10px;
+      border-radius: 9px;
+      background: #FFFFFF;
+      border: 1px solid var(--ms-border);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .brand-monogram svg {
+      height: 22px;
+      width: auto;
+      max-width: 120px;
+      display: block;
+    }
+
+    .brand-origin-tag {
+      padding: 3px 9px;
+      border-radius: 999px;
+      background: #FFFFFF;
+      border: 1px solid var(--ms-border);
+      font-size: 10.5px;
+      font-weight: 700;
+      color: var(--ms-subtle);
+    }
+
+    .brand-card-link h3 {
+      font-size: 16px;
+      font-weight: 800;
+      color: var(--ms-ink);
+      margin-bottom: 4px;
+    }
+
+    .brand-card-shell:hover h3 {
+      color: var(--ms-blue);
+    }
+
+    .brand-card-link p {
+      font-size: 12px;
+      color: var(--ms-subtle);
+      line-height: 1.5;
+    }
+
+    .brand-partner-pill {
+      margin-top: 10px;
+      padding: 7px 9px;
+      border-radius: 7px;
+      background: #EBF5FF;
+      border: 1px solid #BFDBFE;
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--ms-blue-deep);
+    }
+
+    .brand-card-footer {
+      margin-top: 14px;
+      padding-top: 10px;
+      border-top: 1px solid var(--ms-border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 11.5px;
+      font-weight: 700;
+      color: var(--ms-blue);
+    }
+
+    /* Category Cards Grid */
+    .category-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 18px;
+    }
+
+    @media (min-width: 640px) {
+      .category-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .category-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    .cat-card-shell {
+      display: flex;
+      flex-direction: column;
+      background: #FFFFFF;
+      border: 1px solid var(--ms-border);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      box-shadow: var(--shadow-2);
+      transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .cat-card-shell:hover {
+      transform: translateY(-4px);
+      border-color: var(--ms-blue);
+      box-shadow: 0 12px 26px rgba(0, 120, 212, 0.13);
+    }
+
+    .cat-card-link {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      flex: 1;
+      padding: 22px;
+    }
+
+    .cat-card-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 14px;
+    }
+
+    .cat-icon-box {
+      width: 42px;
+      height: 42px;
+      border-radius: 10px;
+      background: #EBF5FF;
+      color: var(--ms-blue);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 19px;
+      font-weight: 700;
+      transition: background-color 0.2s ease, color 0.2s ease;
+    }
+
+    .cat-card-shell:hover .cat-icon-box {
+      background: var(--ms-blue);
+      color: #FFFFFF;
+    }
+
+    .cat-badge {
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: var(--ms-surface);
+      border: 1px solid var(--ms-border);
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--ms-ink);
+    }
+
+    .cat-card-link h3 {
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--ms-ink);
+      margin-bottom: 4px;
+    }
+
+    .cat-card-shell:hover h3 {
+      color: var(--ms-blue);
+    }
+
+    .cat-brand {
+      font-size: 12.5px;
+      font-weight: 700;
+      color: var(--ms-blue);
+      margin-bottom: 6px;
+    }
+
+    .cat-desc {
+      font-size: 12.5px;
+      color: var(--ms-subtle);
+      line-height: 1.5;
+    }
+
+    .cat-footer {
+      margin-top: 16px;
+      padding-top: 12px;
+      border-top: 1px solid var(--ms-border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--ms-blue);
+    }
+
+    /* Filter Pills */
+    .filter-bar {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      overflow-x: auto;
+      padding-bottom: 6px;
+      margin-bottom: 24px;
+      scrollbar-width: none;
+    }
+
+    .filter-bar::-webkit-scrollbar {
+      display: none;
+    }
+
+    .filter-pill {
+      padding: 7px 14px;
+      border-radius: 8px;
+      border: 1px solid var(--ms-border);
+      background: var(--ms-canvas);
+      color: var(--ms-ink);
+      font-size: 12px;
+      font-weight: 600;
+      white-space: nowrap;
+      transition: all 0.15s ease;
+    }
+
+    .filter-pill:hover {
+      border-color: var(--ms-blue);
+    }
+
+    .filter-pill.active {
+      background: var(--ms-blue);
+      border-color: var(--ms-blue);
+      color: #FFFFFF;
+      box-shadow: var(--shadow-2);
+    }
+
+    /* Product Cards Grid */
+    .products-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+
+    @media (min-width: 680px) {
+      .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (min-width: 1040px) {
+      .products-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    .product-card-shell {
+      display: flex;
+      flex-direction: column;
+      background: #FFFFFF;
+      border: 1px solid var(--ms-border);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      box-shadow: var(--shadow-2);
+      transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .product-card-shell:hover {
+      transform: translateY(-4px);
+      border-color: var(--ms-blue);
+      box-shadow: 0 14px 28px rgba(0, 120, 212, 0.14);
+    }
+
+    .product-card-link {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      flex: 1;
+    }
+
+    .product-banner {
+      position: relative;
+      padding: 20px 20px 18px;
+      color: #FFFFFF;
+      min-height: 120px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .product-banner-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+    }
+
+    .product-brand-tag {
+      padding: 4px 10px;
+      border-radius: 6px;
+      background: rgba(255, 255, 255, 0.96);
+      color: var(--ms-blue-deep);
+      font-size: 11.5px;
+      font-weight: 800;
+      letter-spacing: 0.02em;
+    }
+
+    .product-site-tag {
+      padding: 4px 9px;
+      border-radius: 6px;
+      background: rgba(11, 18, 32, 0.55);
+      border: 1px solid rgba(255, 255, 255, 0.24);
+      color: #FFFFFF;
+      font-size: 11px;
+      font-weight: 600;
+    }
+
+    .product-spec-line {
+      font-size: 11.5px;
+      font-weight: 600;
+      color: rgba(255, 255, 255, 0.92);
+      margin-top: 16px;
+    }
+
+    .product-body {
+      padding: 18px 20px;
+      flex: 1;
+    }
+
+    .product-body h3 {
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--ms-ink);
+      line-height: 1.3;
+    }
+
+    .product-card-shell:hover .product-body h3 {
+      color: var(--ms-blue);
+    }
+
+    .product-body p {
+      font-size: 13px;
+      color: var(--ms-subtle);
+      margin-top: 8px;
+      line-height: 1.55;
+    }
+
+    .partner-insight-box {
+      margin-top: 14px;
+      padding: 11px 12px;
+      border-radius: 8px;
+      background: #EBF5FF;
+      border: 1px solid #BFDBFE;
+    }
+
+    .partner-insight-box span {
+      display: block;
+      font-size: 10.5px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--ms-blue);
+      margin-bottom: 3px;
+    }
+
+    .partner-insight-box p {
+      font-size: 12px;
+      color: var(--ms-ink);
+      margin-top: 0;
+    }
+
+    .product-footer {
+      padding: 13px 20px;
+      background: var(--ms-canvas);
+      border-top: 1px solid var(--ms-border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    .visit-link-text {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--ms-blue);
+    }
+
+    .product-card-shell:hover .visit-link-text {
+      text-decoration: underline;
+    }
+
+    .btn-wa-mini {
+      padding: 7px 11px;
+      border-radius: 7px;
+      border: none;
+      background: var(--ms-emerald);
+      color: #FFFFFF;
+      font-size: 11.5px;
+      font-weight: 700;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      transition: background-color 0.15s ease;
+    }
+
+    .btn-wa-mini:hover {
+      background: var(--ms-emerald-hover);
+    }
+
+    /* ===================================================================== */
+    /* 5. INTERACTIVE 3D PLANET EARTH (HTML5 CANVAS)                         */
+    /* ===================================================================== */
+    .earth-section {
+      background: radial-gradient(circle at 70% 50%, #102442 0%, #0B1220 68%, #060A12 100%);
+      color: #FFFFFF;
+      padding: 56px 0;
+      border-bottom: 1px solid #1E293B;
+    }
+
+    .earth-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 32px;
+      align-items: center;
+    }
+
+    @media (min-width: 960px) {
+      .earth-grid {
+        grid-template-columns: 5fr 7fr;
+      }
+    }
+
+    .earth-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 5px 12px;
+      border-radius: 999px;
+      background: rgba(0, 183, 195, 0.14);
+      border: 1px solid rgba(0, 183, 195, 0.38);
+      font-size: 11.5px;
+      font-weight: 700;
+      color: #67E8F9;
+      margin-bottom: 14px;
+    }
+
+    .earth-title {
+      font-size: clamp(24px, 3.2vw, 32px);
+      font-weight: 800;
+      color: #FFFFFF;
+      line-height: 1.2;
+    }
+
+    .earth-desc {
+      font-size: 13.5px;
+      color: #CBD5E1;
+      margin-top: 10px;
+      line-height: 1.6;
+    }
+
+    .country-pills-wrap {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 20px 0;
+    }
+
+    .country-pill-btn {
+      padding: 6px 11px;
+      border-radius: 7px;
+      border: 1px solid #334155;
+      background: rgba(15, 23, 42, 0.85);
+      color: #E2E8F0;
+      font-size: 12px;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.15s ease;
+    }
+
+    .country-pill-btn:hover,
+    .country-pill-btn.active {
+      border-color: #38BDF8;
+      background: rgba(56, 189, 248, 0.18);
+      color: #FFFFFF;
+    }
+
+    .cyan-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: #38BDF8;
+      box-shadow: 0 0 8px #38BDF8;
+    }
+
+    .telemetry-card {
+      padding: 16px;
+      border-radius: var(--radius-md);
+      background: rgba(15, 23, 42, 0.9);
+      border: 1px solid #1E293B;
+    }
+
+    .telemetry-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      margin-bottom: 6px;
+    }
+
+    #activeCountryName {
+      font-size: 14px;
+      font-weight: 700;
+      color: #67E8F9;
+    }
+
+    .live-node-tag {
+      padding: 2px 8px;
+      border-radius: 5px;
+      background: rgba(16, 185, 129, 0.18);
+      color: #6EE7B7;
+      font-size: 11px;
+      font-weight: 700;
+    }
+
+    #activeCountryDetail {
+      font-size: 12.5px;
+      color: #CBD5E1;
+      line-height: 1.55;
+    }
+
+    .earth-stage {
+      position: relative;
+      width: 100%;
+      height: 360px;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      background: radial-gradient(circle at 50% 50%, #0F1E38 0%, #050911 100%);
+      border: 1px solid #1E293B;
+      box-shadow: 0 24px 50px rgba(0, 0, 0, 0.5);
+    }
+
+    @media (min-width: 640px) {
+      .earth-stage {
+        height: 430px;
+      }
+    }
+
+    #earthCanvas {
+      width: 100%;
+      height: 100%;
+      display: block;
+      cursor: grab;
+      touch-action: none;
+    }
+
+    #earthCanvas:active {
+      cursor: grabbing;
+    }
+
+    .earth-hud-top {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      padding: 6px 12px;
+      border-radius: 8px;
+      background: rgba(6, 10, 18, 0.78);
+      border: 1px solid #1E293B;
+      font-size: 11px;
+      font-weight: 600;
+      color: #E2E8F0;
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      pointer-events: none;
+    }
+
+    .btn-reset-earth {
+      position: absolute;
+      bottom: 12px;
+      right: 12px;
+      padding: 7px 12px;
+      border-radius: 8px;
+      border: 1px solid #334155;
+      background: rgba(15, 23, 42, 0.88);
+      color: #E2E8F0;
+      font-size: 11.5px;
+      font-weight: 600;
+    }
+
+    .btn-reset-earth:hover {
+      background: #1E293B;
+      border-color: #38BDF8;
+    }
+
+    /* ===================================================================== */
+    /* 6. WHATSAPP LEAD CONCIERGE & MICROSOFT COPYRIGHT FOOTER               */
+    /* ===================================================================== */
+    .concierge-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 28px;
+      align-items: start;
+    }
+
+    @media (min-width: 960px) {
+      .concierge-grid {
+        grid-template-columns: 5fr 7fr;
+      }
+    }
+
+    .wa-settings-box {
+      margin-top: 18px;
+      padding: 16px;
+      border-radius: var(--radius-md);
+      background: #FFFFFF;
+      border: 1px solid var(--ms-border);
+    }
+
+    .wa-settings-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 6px;
+    }
+
+    .wa-settings-top span {
+      font-size: 12.5px;
+      font-weight: 700;
+      color: var(--ms-ink);
+    }
+
+    .link-btn {
+      background: none;
+      border: none;
+      color: var(--ms-blue);
+      font-size: 12px;
+      font-weight: 600;
+      text-decoration: underline;
+    }
+
+    .wa-active-line {
+      font-size: 12.5px;
+      color: var(--ms-subtle);
+    }
+
+    #whatsAppNumberEditor {
+      display: none;
+      margin-top: 10px;
+      gap: 8px;
+    }
+
+    .concierge-form {
+      background: #FFFFFF;
+      border: 1px solid var(--ms-border);
+      border-radius: var(--radius-lg);
+      padding: 26px;
+      box-shadow: var(--shadow-8);
+    }
+
+    .form-row-2 {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 14px;
+      margin-bottom: 14px;
+    }
+
+    @media (min-width: 640px) {
+      .form-row-2 {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    .form-group {
+      margin-bottom: 14px;
+    }
+
+    .form-label {
+      display: block;
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--ms-ink);
+      margin-bottom: 5px;
+    }
+
+    .btn-submit-wa {
+      width: 100%;
+      padding: 14px 18px;
+      border-radius: var(--radius-sm);
+      border: none;
+      background: var(--ms-emerald);
+      color: #FFFFFF;
+      font-size: 14px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      box-shadow: var(--shadow-2);
+      transition: background-color 0.15s ease;
+    }
+
+    .btn-submit-wa:hover {
+      background: var(--ms-emerald-hover);
+    }
+
+    .ms-footer {
+      background: #FFFFFF;
+      border-top: 1px solid var(--ms-border);
+      padding: 28px 0;
+    }
+
+    .footer-inner {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      align-items: center;
+      justify-content: space-between;
+      text-align: center;
+    }
+
+    @media (min-width: 860px) {
+      .footer-inner {
+        flex-direction: row;
+        text-align: left;
+      }
+    }
+
+    .footer-copy {
+      font-size: 12.5px;
+      color: var(--ms-subtle);
+    }
+
+    .footer-copy strong {
+      color: var(--ms-ink);
+    }
+
+    /* ===================================================================== */
+    /* 7. PARTNER STUDIO SLIDE-OVER DRAWER & ITEM EDITOR MODAL               */
+    /* ===================================================================== */
+    #partnerStudioDrawer {
+      position: fixed;
+      inset: 0;
+      z-index: 9800;
+      display: none;
+      justify-content: flex-end;
+      background: rgba(11, 18, 32, 0.55);
+      backdrop-filter: blur(4px);
+    }
+
+    .drawer-panel {
+      width: 100%;
+      max-width: 440px;
+      height: 100%;
+      background: #FFFFFF;
+      border-left: 1px solid var(--ms-border);
+      box-shadow: var(--shadow-64);
+      display: flex;
+      flex-direction: column;
+      overflow-y: auto;
+    }
+
+    .drawer-header {
+      padding: 20px 22px;
+      border-bottom: 1px solid var(--ms-border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: var(--ms-canvas);
+    }
+
+    .drawer-header h3 {
+      font-size: 16px;
+      font-weight: 800;
+      color: var(--ms-ink);
+    }
+
+    .drawer-header p {
+      font-size: 12px;
+      color: var(--ms-subtle);
+    }
+
+    .drawer-body {
+      padding: 20px 22px;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      flex: 1;
+    }
+
+    .studio-card {
+      padding: 15px;
+      border-radius: var(--radius-md);
+      background: var(--ms-canvas);
+      border: 1px solid var(--ms-border);
+    }
+
+    .studio-card h4 {
+      font-size: 13px;
+      font-weight: 800;
+      color: var(--ms-ink);
+      margin-bottom: 6px;
+    }
+
+    .studio-card p {
+      font-size: 12px;
+      color: var(--ms-subtle);
+      margin-bottom: 10px;
+      line-height: 1.5;
+    }
+
+    .studio-btn-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+    }
+
+    /* Item Editor Modal */
+    #itemEditorModal {
+      position: fixed;
+      inset: 0;
+      z-index: 9850;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 18px;
+      background: rgba(11, 18, 32, 0.6);
+      backdrop-filter: blur(4px);
+    }
+
+    .modal-box {
+      width: 100%;
+      max-width: 500px;
+      max-height: 90vh;
+      overflow-y: auto;
+      background: #FFFFFF;
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--ms-border);
+      box-shadow: var(--shadow-64);
+      padding: 24px;
+    }
+
+    .modal-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 16px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--ms-border);
+    }
+
+    .modal-top h3 {
+      font-size: 16px;
+      font-weight: 800;
+      color: var(--ms-ink);
+    }
+
+    /* Launch Banner & Toast */
+    #brandLaunchBanner {
+      position: fixed;
+      bottom: 16px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 9500;
+      display: none;
+      width: 94%;
+      max-width: 540px;
+      background: #0B1220;
+      color: #FFFFFF;
+      border: 1px solid rgba(0, 120, 212, 0.7);
+      border-radius: 14px;
+      padding: 14px 16px;
+      box-shadow: var(--shadow-64);
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .launch-info {
+      min-width: 0;
+    }
+
+    #brandLaunchTitle {
+      font-size: 13px;
+      font-weight: 700;
+      color: #FFFFFF;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .launch-sub {
+      font-size: 11px;
+      color: #94A3B8;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .launch-btns {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-shrink: 0;
+    }
+
+    .btn-open-direct {
+      padding: 8px 13px;
+      border-radius: 8px;
+      background: var(--ms-blue);
+      color: #FFFFFF;
+      font-size: 12px;
+      font-weight: 700;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .btn-close-banner {
+      background: none;
+      border: none;
+      color: #94A3B8;
+      font-size: 18px;
+      padding: 2px 6px;
+    }
+
+    #toastBanner {
+      position: fixed;
+      top: 68px;
+      right: 16px;
+      z-index: 9900;
+      display: none;
+      max-width: 340px;
+      background: #FFFFFF;
+      border: 1px solid var(--ms-border);
+      border-left: 4px solid var(--ms-blue);
+      border-radius: 10px;
+      padding: 12px 14px;
+      box-shadow: var(--shadow-16);
+    }
+
+    #toastTitle {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--ms-ink);
+    }
+
+    #toastMessage {
+      font-size: 12px;
+      color: var(--ms-subtle);
+      margin-top: 2px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Early Core Auth & Tab Registration (Ensures handlers exist before any click) -->
+  <script>
+    var PARTNER_SECRET = 'Partner@2026';
+    var DEFAULT_WORKSPACE_IDENTITY = 'Global Business Partnership';
+    var currentSessionRole = 'guest';
+    var activePartnerName = DEFAULT_WORKSPACE_IDENTITY;
+    var isEditModeActive = false;
+    var targetWhatsApp = '919876543210';
+
+    window.switchLoginTab = function (tab) {
+      var guestTab = document.getElementById('tabGuestBtn');
+      var partnerTab = document.getElementById('tabPartnerBtn');
+      var guestPanel = document.getElementById('guestLoginPanel');
+      var partnerPanel = document.getElementById('partnerLoginPanel');
+      var err = document.getElementById('partnerErrorMsg');
+
+      if (err) err.style.display = 'none';
+
+      if (tab === 'partner') {
+        if (guestTab) { guestTab.classList.remove('active'); guestTab.setAttribute('aria-selected', 'false'); }
+        if (partnerTab) { partnerTab.classList.add('active'); partnerTab.setAttribute('aria-selected', 'true'); }
+        if (guestPanel) guestPanel.style.display = 'none';
+        if (partnerPanel) partnerPanel.style.display = 'block';
+        var nameInput = document.getElementById('partnerNameInput');
+        if (nameInput) setTimeout(function () { nameInput.focus(); }, 20);
+      } else {
+        if (partnerTab) { partnerTab.classList.remove('active'); partnerTab.setAttribute('aria-selected', 'false'); }
+        if (guestTab) { guestTab.classList.add('active'); guestTab.setAttribute('aria-selected', 'true'); }
+        if (partnerPanel) partnerPanel.style.display = 'none';
+        if (guestPanel) guestPanel.style.display = 'block';
+      }
+    };
+
+    window.togglePasswordVisibility = function () {
+      var inp = document.getElementById('partnerPasswordInput');
+      var btn = document.getElementById('togglePwdBtn');
+      if (!inp || !btn) return;
+      if (inp.type === 'password') {
+        inp.type = 'text';
+        btn.textContent = 'Hide';
+      } else {
+        inp.type = 'password';
+        btn.textContent = 'Show';
+      }
+    };
+  </script>
+
+  <!-- ===================================================================== -->
+  <!-- 1. MODERN & SIMPLE MICROSOFT FLUENT LOGIN GATEWAY                     -->
+  <!-- ===================================================================== -->
+  <div id="loginGateway" role="dialog" aria-modal="true" aria-labelledby="loginDialogTitle">
+    <div class="login-topbar">
+      <div class="ms-brand-lockup">
+        <svg width="20" height="20" viewBox="0 0 21 21" aria-hidden="true">
+          <rect x="1" y="1" width="9" height="9" fill="#F25022" />
+          <rect x="11" y="1" width="9" height="9" fill="#7FBA00" />
+          <rect x="1" y="11" width="9" height="9" fill="#00A4EF" />
+          <rect x="11" y="11" width="9" height="9" fill="#FFB900" />
+        </svg>
+        <span>Microsoft</span>
+        <span class="ms-divider">|</span>
+        <span class="ms-sub-tag">Developed by Microsoft</span>
+      </div>
+
+      <div class="live-pill">
+        <span class="pulse-dot"></span>
+        <span>247+ Brands In-House</span>
+      </div>
+    </div>
+
+    <div class="login-card-wrap">
+      <div class="login-card">
+        <div class="login-identity">
+          <div class="avatar-circle" id="loginAvatarInitials">GB</div>
+          <div>
+            <h1 id="loginDialogTitle">Global Business Partnership</h1>
+            <p>Global Brand Portfolio &bull; 247+ Brands In-House</p>
+          </div>
+        </div>
+
+        <!-- Clean Segmented Access Switcher -->
+        <div class="login-tabs" role="tablist">
+          <button
+            type="button"
+            id="tabGuestBtn"
+            role="tab"
+            aria-selected="true"
+            onclick="switchLoginTab('guest')"
+            class="login-tab-btn active"
+          >
+            Guest Access
+          </button>
+          <button
+            type="button"
+            id="tabPartnerBtn"
+            role="tab"
+            aria-selected="false"
+            onclick="switchLoginTab('partner')"
+            class="login-tab-btn"
+          >
+            Partner Sign-In
+          </button>
+        </div>
+
+        <!-- Guest Tab Panel -->
+        <div id="guestLoginPanel">
+          <p class="login-panel-desc">
+            Explore Global Business Partnership&rsquo;s global luxury brand ecosystem, official product portals, and international distribution map.
+          </p>
+          <button
+            type="button"
+            id="btnGuestLogin"
+            onclick="enterWorkspace('guest')"
+            class="btn-ms-primary"
+          >
+            <span>Continue as Guest</span>
+            <span>&rarr;</span>
+          </button>
+        </div>
+
+        <!-- Partner Tab Panel -->
+        <div id="partnerLoginPanel" style="display: none;">
+          <p class="login-panel-desc">
+            Enter your name and partner password to personalize the workspace and unlock full editing controls.
+          </p>
+
+          <div class="password-field-group">
+            <label for="partnerNameInput" class="password-label">Partner Full Name</label>
+            <input
+              id="partnerNameInput"
+              type="text"
+              autocomplete="name"
+              placeholder="Enter your full name"
+              onkeydown="if(event.key==='Enter') verifyPartnerLogin()"
+              class="ms-input"
+            />
+          </div>
+
+          <div class="password-field-group">
+            <label for="partnerPasswordInput" class="password-label">Partner Password</label>
+            <div class="password-input-wrap">
+              <input
+                id="partnerPasswordInput"
+                type="password"
+                autocomplete="current-password"
+                placeholder="Enter partner password"
+                onkeydown="if(event.key==='Enter') verifyPartnerLogin()"
+                class="ms-input"
+              />
+              <button
+                type="button"
+                id="togglePwdBtn"
+                onclick="togglePasswordVisibility()"
+                class="btn-toggle-eye"
+              >
+                Show
+              </button>
+            </div>
+          </div>
+
+          <div id="partnerErrorMsg">
+            Incorrect password. Please try again.
+          </div>
+
+          <button
+            type="button"
+            id="btnUnlockPartner"
+            onclick="verifyPartnerLogin()"
+            class="btn-ms-primary"
+          >
+            <span>Sign In as Partner</span>
+            <span>&rarr;</span>
+          </button>
+        </div>
+
+        <!-- Partner With Logos Showcase on Login Page -->
+        <div class="partner-with-box">
+          <div class="partner-with-label">Partner With</div>
+          <div class="partner-with-rows">
+            <!-- Row 1: RAMADA • KENT • MUGNIER -->
+            <div class="partner-with-row">
+              <!-- RAMADA Logo -->
+              <div class="alliance-logo-card" title="Ramada Worldwide Hospitality">
+                <svg viewBox="0 0 132 34" aria-label="Ramada Logo">
+                  <circle cx="17" cy="17" r="12" fill="none" stroke="#C8102E" stroke-width="2.2" />
+                  <path d="M17 7 L19.6 13.8 L26.8 14.2 L21.2 18.8 L23 25.8 L17 21.8 L11 25.8 L12.8 18.8 L7.2 14.2 L14.4 13.8 Z" fill="#C8102E" />
+                  <text x="35" y="22" font-family="'Segoe UI', Arial, sans-serif" font-size="15.5" font-weight="800" letter-spacing="1.2" fill="#C8102E">RAMADA</text>
+                </svg>
+                <span class="alliance-logo-sub">Hospitality</span>
+              </div>
+
+              <!-- KENT Logo -->
+              <div class="alliance-logo-card" title="KENT Water Purifiers">
+                <svg viewBox="0 0 124 34" aria-label="KENT Logo">
+                  <path d="M16 5 C16 5 8 15 8 20.5 C8 25 11.6 28.5 16 28.5 C20.4 28.5 24 25 24 20.5 C24 15 16 5 16 5 Z" fill="#0072CE" />
+                  <path d="M13.5 21.5 C13.5 18.5 16 14 16 14 C16 14 14.5 19 16.5 21.5" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round" fill="none" />
+                  <text x="31" y="23" font-family="'Segoe UI', Arial, sans-serif" font-size="18" font-weight="900" letter-spacing="1.5" fill="#00529B">KENT</text>
+                </svg>
+                <span class="alliance-logo-sub">Water Tech</span>
+              </div>
+
+              <!-- MUGNIER Logo -->
+              <div class="alliance-logo-card" title="Mugnier Swiss Watches">
+                <svg viewBox="0 0 136 34" aria-label="Mugnier Logo">
+                  <rect x="6" y="6" width="22" height="22" rx="5" fill="#0B1220" stroke="#C59B27" stroke-width="1.5" />
+                  <text x="17" y="21" text-anchor="middle" font-family="Georgia, serif" font-size="12" font-weight="700" fill="#FBBF24">M</text>
+                  <text x="34" y="21.5" font-family="Georgia, 'Times New Roman', serif" font-size="14.5" font-weight="700" letter-spacing="1.4" fill="#1E293B">MUGNIER</text>
+                </svg>
+                <span class="alliance-logo-sub">Swiss Watches</span>
+              </div>
+            </div>
+
+            <!-- Row 2: SHERATON • SHARP • KINNARI -->
+            <div class="partner-with-row">
+              <!-- SHERATON Logo -->
+              <div class="alliance-logo-card" title="Sheraton Hotels & Resorts">
+                <svg viewBox="0 0 144 34" aria-label="Sheraton Logo">
+                  <circle cx="17" cy="17" r="12.5" fill="none" stroke="#1E293B" stroke-width="1.8" />
+                  <path d="M10 19 C11 11 14 9 17 17 C20 25 23 23 24 15" fill="none" stroke="#1E293B" stroke-width="2" stroke-linecap="round" />
+                  <text x="35" y="21.5" font-family="Georgia, serif" font-size="13.5" font-weight="700" letter-spacing="1.1" fill="#1E293B">SHERATON</text>
+                </svg>
+                <span class="alliance-logo-sub">Global Resorts</span>
+              </div>
+
+              <!-- SHARP Logo -->
+              <div class="alliance-logo-card" title="SHARP Air Purifiers">
+                <svg viewBox="0 0 126 34" aria-label="SHARP Logo">
+                  <text x="63" y="23" text-anchor="middle" font-family="'Arial Black', 'Segoe UI', sans-serif" font-size="19" font-weight="900" letter-spacing="1.8" fill="#E60012">SHARP</text>
+                </svg>
+                <span class="alliance-logo-sub">Air Purifiers</span>
+              </div>
+
+              <!-- KINNARI Logo -->
+              <div class="alliance-logo-card" title="Kinnari Royal Fine Jewellery">
+                <svg viewBox="0 0 134 34" aria-label="Kinnari Logo">
+                  <polygon points="17,5 27,14 17,29 7,14" fill="none" stroke="#B45309" stroke-width="1.8" />
+                  <polyline points="7,14 27,14" stroke="#D97706" stroke-width="1.3" />
+                  <polyline points="12,5 17,14 22,5" fill="none" stroke="#D97706" stroke-width="1.2" />
+                  <text x="34" y="21.5" font-family="Georgia, 'Times New Roman', serif" font-size="14.5" font-weight="700" letter-spacing="1.4" fill="#78350F">KINNARI</text>
+                </svg>
+                <span class="alliance-logo-sub">Fine Jewellery</span>
+              </div>
+            </div>
+
+            <!-- Row 3: APPLE -->
+            <div class="partner-with-row single">
+              <!-- APPLE Logo -->
+              <div class="alliance-logo-card" title="Apple Ecosystem">
+                <svg viewBox="0 0 116 34" aria-label="Apple Logo">
+                  <path d="M23.5 17.8 C23.5 14.3 26.4 12.5 26.5 12.4 C24.9 10.1 22.4 9.8 21.5 9.7 C19.4 9.5 17.4 10.9 16.3 10.9 C15.2 10.9 13.6 9.7 11.8 9.7 C9.5 9.8 7.4 11.1 6.2 13.1 C3.8 17.3 5.6 23.4 7.9 26.8 C9.1 28.4 10.4 30.3 12.2 30.2 C14 30.1 14.7 29.1 16.8 29.1 C18.9 29.1 19.5 30.2 21.4 30.2 C23.3 30.2 24.4 28.5 25.5 26.9 C26.9 24.9 27.4 23 27.5 22.9 C27.4 22.8 23.6 21.4 23.5 17.8 Z" fill="#1D1D1F" />
+                  <path d="M20.2 7.5 C21.2 6.3 21.8 4.7 21.6 3 C20.2 3.1 18.5 4 17.5 5.1 C16.6 6.1 15.8 7.8 16.1 9.4 C17.6 9.5 19.2 8.7 20.2 7.5 Z" fill="#1D1D1F" />
+                  <text x="35" y="23" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="16.5" font-weight="600" letter-spacing="-0.3" fill="#1D1D1F">Apple</text>
+                </svg>
+                <span class="alliance-logo-sub">Ecosystem Tech</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="login-footer">
+      <svg width="16" height="16" viewBox="0 0 21 21" aria-hidden="true">
+        <rect x="1" y="1" width="9" height="9" fill="#F25022" />
+        <rect x="11" y="1" width="9" height="9" fill="#7FBA00" />
+        <rect x="1" y="11" width="9" height="9" fill="#00A4EF" />
+        <rect x="11" y="11" width="9" height="9" fill="#FFB900" />
+      </svg>
+      <span id="loginFooterCopy">&copy; 2026 Microsoft. Developed by Microsoft &mdash; Designed &amp; Developed exclusively for <strong>Global Business Partnership</strong></span>
+    </div>
+  </div>
+
+  <!-- ===================================================================== -->
+  <!-- 2. MAIN EXECUTIVE WORKSPACE + TOP-RIGHT PARTNER EDITING SUITE         -->
+  <!-- ===================================================================== -->
+  <div id="mainWorkspace">
+
+    <!-- Sticky Microsoft Top Navigation Bar -->
+    <header class="top-navbar">
+      <div class="container navbar-inner">
+        <div class="nav-left">
+          <div class="nine-dot-btn" title="Microsoft Cloud Workspace" aria-hidden="true">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+              <circle cx="3" cy="3" r="1.3" /><circle cx="8" cy="3" r="1.3" /><circle cx="13" cy="3" r="1.3" />
+              <circle cx="3" cy="8" r="1.3" /><circle cx="8" cy="8" r="1.3" /><circle cx="13" cy="8" r="1.3" />
+              <circle cx="3" cy="13" r="1.3" /><circle cx="8" cy="13" r="1.3" /><circle cx="13" cy="13" r="1.3" />
+            </svg>
+          </div>
+
+          <svg width="20" height="20" viewBox="0 0 21 21" aria-hidden="true">
+            <rect x="1" y="1" width="9" height="9" fill="#F25022" />
+            <rect x="11" y="1" width="9" height="9" fill="#7FBA00" />
+            <rect x="1" y="11" width="9" height="9" fill="#00A4EF" />
+            <rect x="11" y="11" width="9" height="9" fill="#FFB900" />
+          </svg>
+
+          <span class="nav-title" id="navWorkspaceTitle" data-editable="navTitle">Global Business Partnership &bull; Entrepreneur, Global Business</span>
+        </div>
+
+        <nav class="nav-links" aria-label="Portfolio Navigation">
+          <a href="#industry-explorer">Industry</a>
+          <a href="#global-earth">Global Footprint</a>
+          <a href="#whatsapp-concierge">WhatsApp</a>
+        </nav>
+
+        <div class="nav-right">
+          <span class="role-badge">
+            <span id="activeRoleDot" class="role-dot"></span>
+            <span id="activeRoleLabel">Guest Mode</span>
+          </span>
+
+          <!-- TOP-RIGHT PARTNER STUDIO CONTROLS (VISIBLE ONLY IN PARTNER LOGIN) -->
+          <div id="partnerStudioControls">
+            <button
+              type="button"
+              id="btnToggleEditMode"
+              onclick="toggleEditMode()"
+              class="btn-edit-mode"
+              title="Enable live inline & card editing across the entire portfolio"
+            >
+              <span>&#9998; Edit Mode: OFF</span>
+            </button>
+
+            <button
+              type="button"
+              onclick="openPartnerStudioDrawer()"
+              class="btn-studio-drawer"
+              title="Manage Portfolio Settings, Save, Export or Reset"
+            >
+              <span>Partner Studio</span>
+            </button>
+          </div>
+
+          <button type="button" onclick="sharePortfolioLink()" class="btn-sm-blue">
+            <span>Share</span>
+          </button>
+
+          <button type="button" onclick="returnToLoginGateway()" class="btn-sm-outline" title="Sign Out or Switch Role">
+            <span>Sign Out</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Live Edit Mode Status Ribbon -->
+    <div id="editModeRibbon">
+      <div class="container ribbon-inner">
+        <span><strong>Live Edit Mode Active:</strong> Click any outlined text to edit inline, or click <strong>Edit</strong> / <strong>+ Add</strong> on any brand, category, or product card.</span>
+        <div class="ribbon-actions">
+          <button type="button" onclick="saveAllPortfolioEdits()" class="btn-ribbon-save">Save Changes</button>
+          <button type="button" onclick="toggleEditMode()" class="btn-ribbon-save">Done Editing</button>
+        </div>
+      </div>
+    </div>
+
+    <main>
+
+      <!-- HERO SECTION -->
+      <section class="hero-section">
+        <div class="container hero-grid">
+          <div>
+            <div class="hero-pill">
+              <span class="gold-star">&#9733;</span>
+              <span id="heroKickerText" data-editable="heroKicker">Entrepreneur, Global Business</span>
+            </div>
+
+            <h1 class="hero-title" id="heroHeadlineText" data-editable="heroHeadline">
+              <span>247+ Brands In-House.</span> Direct Global Luxury &amp; Lifestyle Ecosystem.
+            </h1>
+
+            <p class="hero-desc" id="heroBioText" data-editable="heroBio">
+              Executive partnership portfolio of <strong>Global Business Partnership</strong>. Select any <strong>Industry</strong> below to explore aligned <strong>Brands</strong>, inspect <strong>Products</strong>, or open official brand portals directly.
+            </p>
+
+            <div id="partnerModeBanner">
+              <strong>Partner Mode Active &mdash; Full Edit Access Unlocked</strong>
+              <p>
+                Use <strong>Edit Mode</strong> or <strong>Partner Studio</strong> in the top-right corner to customize headlines, B2B Code, industries, brands, products, and your active WhatsApp routing number.
+              </p>
+            </div>
+
+            <div class="stats-row">
+              <div class="stat-box">
+                <div class="stat-num" id="stat1Num" data-editable="stat1Num">247+</div>
+                <div class="stat-label" id="stat1Label" data-editable="stat1Label">Brands In-House</div>
+              </div>
+              <div class="stat-box">
+                <div class="stat-num dark" id="stat2Num" data-editable="stat2Num">100+</div>
+                <div class="stat-label" id="stat2Label" data-editable="stat2Label">Active Countries</div>
+              </div>
+              <div class="stat-box">
+                <div class="stat-num green" id="stat3Num" data-editable="stat3Num">100%</div>
+                <div class="stat-label" id="stat3Label" data-editable="stat3Label">Official Brand Links</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Executive Identity Card (Verified Blue Tick + B2B Code + Live World Map with Blinkers) -->
+          <div class="exec-card">
+            <div class="exec-card-top">
+              <span class="exec-badge">
+                <span class="blue-tick-icon" aria-hidden="true">
+                  <svg width="10" height="10" viewBox="0 0 12 12" fill="none">
+                    <path d="M2.2 6.2L4.8 8.8L9.8 3.2" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </span>
+                <span id="execCardBadge" data-editable="execBadge">Verified Global Partner</span>
+              </span>
+              <svg width="18" height="18" viewBox="0 0 21 21" aria-hidden="true">
+                <rect x="1" y="1" width="9" height="9" fill="#F25022" />
+                <rect x="11" y="1" width="9" height="9" fill="#7FBA00" />
+                <rect x="1" y="11" width="9" height="9" fill="#00A4EF" />
+                <rect x="11" y="11" width="9" height="9" fill="#FFB900" />
+              </svg>
+            </div>
+
+            <div class="exec-profile-row">
+              <div class="avatar-lg" id="execCardAvatar">GB</div>
+              <div>
+                <h2 id="execCardName" data-editable="execName">Global Business Partnership</h2>
+                <div class="b2b-code-pill">
+                  <span>B2B Code:</span>
+                  <span id="execB2BCode" data-editable="execB2BCode">INXXX</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Interactive World Map with Blinkers (Replaces old text rows & WhatsApp tile) -->
+            <div class="exec-world-map-box">
+              <div class="exec-map-header">
+                <span>Global Partner Operations</span>
+                <span class="exec-map-live">
+                  <span class="pulse-dot"></span>
+                  <span>LIVE</span>
+                </span>
+              </div>
+              <svg class="mini-map-svg" viewBox="0 0 420 190" role="img" aria-label="World Map with Active Partner Blinkers">
+                <!-- Latitude / Longitude Grid -->
+                <line x1="0" y1="48" x2="420" y2="48" stroke="rgba(148,163,184,0.12)" stroke-width="1" />
+                <line x1="0" y1="95" x2="420" y2="95" stroke="rgba(148,163,184,0.18)" stroke-width="1" />
+                <line x1="0" y1="142" x2="420" y2="142" stroke="rgba(148,163,184,0.12)" stroke-width="1" />
+                <line x1="105" y1="0" x2="105" y2="190" stroke="rgba(148,163,184,0.12)" stroke-width="1" />
+                <line x1="210" y1="0" x2="210" y2="190" stroke="rgba(148,163,184,0.18)" stroke-width="1" />
+                <line x1="315" y1="0" x2="315" y2="190" stroke="rgba(148,163,184,0.12)" stroke-width="1" />
+
+                <!-- Stylized Continents -->
+                <!-- North America -->
+                <path d="M35,34 L88,28 L122,48 L108,76 L86,86 L72,72 L46,58 Z" fill="rgba(56,189,248,0.22)" stroke="rgba(125,211,252,0.45)" stroke-width="1" />
+                <!-- South America -->
+                <path d="M108,98 L136,106 L146,136 L128,168 L114,158 L106,124 Z" fill="rgba(56,189,248,0.22)" stroke="rgba(125,211,252,0.45)" stroke-width="1" />
+                <!-- Europe -->
+                <path d="M188,36 L228,32 L242,54 L218,64 L190,58 Z" fill="rgba(56,189,248,0.24)" stroke="rgba(125,211,252,0.5)" stroke-width="1" />
+                <!-- Africa -->
+                <path d="M188,68 L228,70 L244,104 L224,146 L204,142 L192,106 Z" fill="rgba(56,189,248,0.22)" stroke="rgba(125,211,252,0.45)" stroke-width="1" />
+                <!-- Asia -->
+                <path d="M242,34 L346,32 L368,64 L340,94 L296,98 L278,84 L252,72 Z" fill="rgba(56,189,248,0.25)" stroke="rgba(125,211,252,0.5)" stroke-width="1" />
+                <!-- Australia -->
+                <path d="M324,122 L364,120 L372,148 L338,154 L322,140 Z" fill="rgba(56,189,248,0.22)" stroke="rgba(125,211,252,0.45)" stroke-width="1" />
+
+                <!-- Blinking Country Nodes -->
+                <!-- USA -->
+                <circle cx="96" cy="58" r="3" fill="#38BDF8" />
+                <circle cx="96" cy="58" r="6" class="map-blinker-ring" />
+                <!-- UK -->
+                <circle cx="196" cy="46" r="2.8" fill="#38BDF8" />
+                <circle cx="196" cy="46" r="6" class="map-blinker-ring" style="animation-delay:0.3s" />
+                <!-- Switzerland & Germany -->
+                <circle cx="212" cy="50" r="3" fill="#38BDF8" />
+                <circle cx="212" cy="50" r="6" class="map-blinker-ring" style="animation-delay:0.6s" />
+                <!-- UAE -->
+                <circle cx="256" cy="74" r="3" fill="#38BDF8" />
+                <circle cx="256" cy="74" r="6" class="map-blinker-ring" style="animation-delay:0.9s" />
+                <!-- India (Primary Hub - Gold Blinker) -->
+                <circle cx="286" cy="76" r="4" fill="#FBBF24" />
+                <circle cx="286" cy="76" r="8" class="map-blinker-ring india" />
+                <text x="293" y="79" fill="#FDE68A" font-size="9.5" font-weight="700">INDIA</text>
+                <!-- Singapore -->
+                <circle cx="316" cy="96" r="3" fill="#38BDF8" />
+                <circle cx="316" cy="96" r="6" class="map-blinker-ring" style="animation-delay:1.2s" />
+                <!-- Japan -->
+                <circle cx="358" cy="58" r="3" fill="#38BDF8" />
+                <circle cx="358" cy="58" r="6" class="map-blinker-ring" style="animation-delay:1.5s" />
+                <!-- South Africa -->
+                <circle cx="222" cy="138" r="2.8" fill="#38BDF8" />
+                <circle cx="222" cy="138" r="6" class="map-blinker-ring" style="animation-delay:1.7s" />
+                <!-- Australia -->
+                <circle cx="352" cy="138" r="3" fill="#38BDF8" />
+                <circle cx="352" cy="138" r="6" class="map-blinker-ring" style="animation-delay:1.9s" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- HIERARCHICAL 3-LEVEL DRILL-DOWN: INDUSTRY -> BRANDS -> PRODUCTS -->
+      <section id="industry-explorer" class="section-block white">
+        <div class="container">
+          <div class="section-header row">
+            <div>
+              <div class="section-kicker" data-editable="industryKicker">Industry &bull; Brands &bull; Products</div>
+              <h2 class="section-title" id="explorerMainTitle" data-editable="industryTitle">Industry Portfolio Explorer</h2>
+            </div>
+            <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
+              <p class="section-hint" id="explorerMainHint">Select an Industry to view its Brands, then click a Brand to explore its Products</p>
+              <button type="button" onclick="openItemModal('brand', -1)" class="btn-add-item">+ Add Brand</button>
+              <button type="button" onclick="openItemModal('product', -1)" class="btn-add-item">+ Add Product</button>
+            </div>
+          </div>
+
+          <!-- Breadcrumb & Navigation Bar -->
+          <div class="drilldown-bar">
+            <div id="explorerBreadcrumbs" class="breadcrumb-trail"></div>
+            <div id="explorerBackAction" class="view-mode-pills"></div>
+          </div>
+
+          <!-- Dynamic Stage Container (Renders Level 1 Industries, Level 2 Brands, or Level 3 Products) -->
+          <div id="industryExplorerStage"></div>
+        </div>
+      </section>
+
+      <!-- ENHANCED INTERACTIVE 3D PLANET EARTH: GLOBAL FOOTPRINT (LIVE) -->
+      <section id="global-earth" class="earth-section">
+        <div class="container earth-grid">
+          <div>
+            <div class="earth-pill">
+              <span class="pulse-dot"></span>
+              <span>Global Footprint (LIVE)</span>
+            </div>
+
+            <h2 class="earth-title" data-editable="earthTitle">Global Footprint (LIVE)</h2>
+            <p class="earth-desc" data-editable="earthDesc">
+              Drag the 3D Planet Earth or tap any active country hub below to smoothly rotate the globe to live partner operations across 100+ markets.
+            </p>
+
+            <div id="countryMarketPills" class="country-pills-wrap"></div>
+
+            <div class="telemetry-card">
+              <div class="telemetry-top">
+                <span id="activeCountryName">India &mdash; South Asia Hub</span>
+                <span class="live-node-tag">LIVE NODE</span>
+              </div>
+              <p id="activeCountryDetail">
+                Primary executive operations base for luxury watches, health &amp; wellness technology, water &amp; air purification, and global business expansion.
+              </p>
+            </div>
+          </div>
+
+          <div class="earth-stage">
+            <canvas id="earthCanvas"></canvas>
+            <div class="earth-hud-top">
+              <span class="pulse-dot"></span>
+              <span>Global Footprint (LIVE) &bull; Drag Globe or Select Hub</span>
+            </div>
+            <button type="button" onclick="resetEarthView()" class="btn-reset-earth">
+              Reset Globe View
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- WHATSAPP LEAD CONCIERGE (FROZEN FOR GUESTS, EDITABLE IN PARTNER VIEW) -->
+      <section id="whatsapp-concierge" class="section-block canvas">
+        <div class="container concierge-grid">
+          <div>
+            <div class="section-kicker" data-editable="waKicker">Instant Executive Connect</div>
+            <h2 class="section-title" id="waSectionTitle" data-editable="waTitle">Partner With Global Business Partnership</h2>
+            <p class="section-hint" id="waSectionDesc" style="margin-top: 10px; line-height: 1.65;" data-editable="waDesc">
+              Submit your inquiry below to send a structured message directly to Global Business Partnership&rsquo;s WhatsApp for business development partnerships across our <strong>247+ Brands In-House</strong> portfolio or product consultations.
+            </p>
+
+            <div class="wa-settings-box">
+              <div class="wa-settings-top">
+                <span>Executive WhatsApp Routing</span>
+                <!-- Visible ONLY in Partner Mode; Frozen/Hidden in Guest Mode -->
+                <button type="button" id="btnToggleWaEditor" onclick="toggleWhatsAppEditor()" class="link-btn" style="display: none;">
+                  Change Routing Number
+                </button>
+              </div>
+              <p class="wa-active-line" id="waRoutingStatusLine">
+                Verified Direct Line: <strong id="displayWhatsAppNumber">+91 9876543210</strong>
+              </p>
+
+              <!-- Partner-Only Inline Editor -->
+              <div id="whatsAppNumberEditor">
+                <input
+                  id="customWhatsAppInput"
+                  type="tel"
+                  placeholder="919876543210 (with country code)"
+                  class="ms-input"
+                />
+                <button type="button" onclick="saveWhatsAppNumber()" class="btn-sm-blue">
+                  Save
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <form onsubmit="handleWhatsAppSubmit(event)" class="concierge-form">
+            <div class="form-row-2">
+              <div>
+                <label for="leadName" class="form-label">Full Name *</label>
+                <input
+                  id="leadName"
+                  type="text"
+                  required
+                  placeholder="Enter your full name"
+                  class="ms-input"
+                />
+              </div>
+
+              <div>
+                <label for="leadContact" class="form-label">Phone / WhatsApp *</label>
+                <input
+                  id="leadContact"
+                  type="text"
+                  required
+                  placeholder="+91 98XXX XXXXX"
+                  class="ms-input"
+                />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="leadInterest" class="form-label">Industry / Interest *</label>
+              <select id="leadInterest" class="ms-input">
+                <option value="Business Development Partnership (247+ Brands)">Business Development Partnership (247+ Brands)</option>
+                <option value="Luxury Watches (Bernhard H. Mayer / Cimier / Mugnier / CHAIROS / Kinnari)">Luxury Watches (Bernhard H. Mayer / Cimier / Mugnier / CHAIROS / Kinnari)</option>
+                <option value="Health (Amezcua / Nutriplus)">Health (Amezcua / Nutriplus)</option>
+                <option value="Wellness - Water Purifier / Air Purifier (HomePure / SHARP / KENT)">Wellness (Water Purifier / Air Purifier)</option>
+                <option value="Skincare (Physio Radiance / BioSilver / BeYouTe’ / Prospark)">Skincare (Physio Radiance / BioSilver / BeYouTe&rsquo; / Prospark)</option>
+                <option value="Travel & Tourism (QVI Club / QVI Vacay / tripsavr)">Travel &amp; Tourism (QVI Club / QVI Vacay / tripsavr)</option>
+                <option value="Education (qLearn)">Education (qLearn)</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="leadMessage" class="form-label">Message / City</label>
+              <textarea
+                id="leadMessage"
+                rows="3"
+                placeholder="Share your city, collaboration goals, or specific product inquiry..."
+                class="ms-input"
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn-submit-wa">
+              <span>Send Details Directly on WhatsApp &rarr;</span>
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- OFFICIAL MICROSOFT COPYRIGHT FOOTER -->
+    <footer class="ms-footer">
+      <div class="container footer-inner">
+        <div class="ms-brand-lockup">
+          <svg width="20" height="20" viewBox="0 0 21 21" aria-hidden="true">
+            <rect x="1" y="1" width="9" height="9" fill="#F25022" />
+            <rect x="11" y="1" width="9" height="9" fill="#7FBA00" />
+            <rect x="1" y="11" width="9" height="9" fill="#00A4EF" />
+            <rect x="11" y="11" width="9" height="9" fill="#FFB900" />
+          </svg>
+          <span>Microsoft</span>
+        </div>
+
+        <p class="footer-copy" id="footerCopyText" data-editable="footerCopy">
+          &copy; 2026 Microsoft. Developed by Microsoft &mdash; Designed &amp; Developed exclusively for <strong>Global Business Partnership</strong>
+        </p>
+
+        <button type="button" onclick="sharePortfolioLink()" class="btn-sm-outline">
+          <span>Share Portfolio Link</span>
+        </button>
+      </div>
+    </footer>
+  </div>
+
+  <!-- ===================================================================== -->
+  <!-- 3. PARTNER STUDIO SLIDE-OVER DRAWER (TOP-RIGHT PARTNER MANAGEMENT)    -->
+  <!-- ===================================================================== -->
+  <div id="partnerStudioDrawer" role="dialog" aria-modal="true" aria-label="Partner Studio">
+    <div class="drawer-panel">
+      <div class="drawer-header">
+        <div>
+          <h3>Partner Studio &amp; CMS</h3>
+          <p id="studioDrawerSub">Full live customization for Global Business Partnership</p>
+        </div>
+        <button type="button" onclick="closePartnerStudioDrawer()" class="btn-sm-outline">&times; Close</button>
+      </div>
+
+      <div class="drawer-body">
+        <div class="studio-card">
+          <h4>1. Live Visual Edit Mode</h4>
+          <p>Toggle inline text editing across headlines, stats, and descriptions, plus Edit/Add/Delete buttons on every brand, category, and product card.</p>
+          <button type="button" onclick="toggleEditMode(); closePartnerStudioDrawer();" class="btn-ms-primary">
+            <span id="drawerEditModeBtnLabel">Turn ON Live Edit Mode</span>
+          </button>
+        </div>
+
+        <div class="studio-card">
+          <h4>2. Quick Add New Portfolio Items</h4>
+          <p>Add a new brand or flagship product under any of the 6 core industries with a custom official website URL.</p>
+          <div class="studio-btn-grid">
+            <button type="button" onclick="closePartnerStudioDrawer(); openItemModal('brand', -1);" class="btn-sm-outline">+ Add Brand</button>
+            <button type="button" onclick="closePartnerStudioDrawer(); openItemModal('product', -1);" class="btn-sm-outline">+ Add Product</button>
+          </div>
+        </div>
+
+        <div class="studio-card">
+          <h4>3. WhatsApp Lead Routing (Partner Access)</h4>
+          <p>Set the live WhatsApp destination number (with country code, no + sign) that Guest Mode uses for all inquiries.</p>
+          <div style="display: flex; gap: 8px;">
+            <input id="studioWhatsAppInput" type="tel" class="ms-input" placeholder="919876543210" />
+            <button type="button" onclick="saveWhatsAppFromStudio()" class="btn-sm-blue">Save</button>
+          </div>
+        </div>
+
+        <div class="studio-card">
+          <h4>4. Save, Backup, Import &amp; Restore</h4>
+          <p>All changes are saved automatically in your browser. Export or import a JSON backup anytime, or reset to factory defaults.</p>
+          <div class="studio-btn-grid">
+            <button type="button" onclick="saveAllPortfolioEdits()" class="btn-sm-blue">Save All Now</button>
+            <button type="button" onclick="exportPortfolioBackup()" class="btn-sm-outline">Export JSON</button>
+            <button type="button" onclick="triggerImportPortfolioBackup()" class="btn-sm-outline" style="grid-column: span 2;">Import JSON Backup</button>
+            <button type="button" onclick="resetPortfolioToDefault()" class="btn-card-del" style="grid-column: span 2; padding: 8px;">Reset Portfolio to Default</button>
+          </div>
+          <input id="importJsonFileInput" type="file" accept=".json,application/json" style="display: none;" onchange="handleImportPortfolioBackup(event)" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================================================================== -->
+  <!-- 4. BRAND / CATEGORY / PRODUCT EDITOR MODAL                            -->
+  <!-- ===================================================================== -->
+  <div id="itemEditorModal" role="dialog" aria-modal="true" aria-labelledby="itemModalTitle">
+    <div class="modal-box">
+      <div class="modal-top">
+        <h3 id="itemModalTitle">Edit Portfolio Item</h3>
+        <button type="button" onclick="closeItemModal()" class="btn-sm-outline">&times;</button>
+      </div>
+
+      <form id="itemEditorForm" onsubmit="saveItemModal(event)">
+        <div class="form-group">
+          <label class="form-label" id="field1Label">Title / Brand Name *</label>
+          <input id="modalField1" type="text" required class="ms-input" />
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" id="field2Label">Subtitle / Brand / Origin *</label>
+          <input id="modalField2" type="text" required class="ms-input" />
+        </div>
+
+        <div class="form-group" id="field3Group">
+          <label class="form-label" id="field3Label">Category / Badge / Spec *</label>
+          <input id="modalField3" type="text" required class="ms-input" />
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" id="field4Label">Description *</label>
+          <textarea id="modalField4" rows="3" required class="ms-input"></textarea>
+        </div>
+
+        <div class="form-group" id="field5Group">
+          <label class="form-label" id="field5Label">Partner B2B Insight (Visible in Partner Mode)</label>
+          <input id="modalField5" type="text" class="ms-input" />
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Official Brand Website URL (https://...) *</label>
+          <input id="modalFieldUrl" type="url" required placeholder="https://www.example.com/" class="ms-input" />
+        </div>
+
+        <div style="display: flex; gap: 10px; justify-content: flex-end; margin-top: 18px;">
+          <button type="button" onclick="closeItemModal()" class="btn-sm-outline">Cancel</button>
+          <button type="submit" class="btn-sm-blue">Save Item</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- NON-BLOCKING BRAND LAUNCH TOAST & SYSTEM NOTICE -->
+  <div id="brandLaunchBanner" role="status">
+    <div class="launch-info">
+      <div id="brandLaunchTitle">Opening Official Brand Website...</div>
+      <div class="launch-sub" id="brandLaunchUrlDisplay">https://www.bernhardhmayer.com/</div>
+    </div>
+    <div class="launch-btns">
+      <a
+        id="brandLaunchDirectAnchor"
+        href="https://www.bernhardhmayer.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="btn-open-direct"
+      >
+        Open Site &nearr;
+      </a>
+      <button type="button" onclick="hideBrandLaunchBanner()" class="btn-close-banner" aria-label="Close">
+        &times;
+      </button>
+    </div>
+  </div>
+
+  <div id="toastBanner" role="status">
+    <div id="toastTitle">Notice</div>
+    <div id="toastMessage"></div>
+  </div>
+
+  <!-- ===================================================================== -->
+  <!-- 5. ZERO-DEPENDENCY APPLICATION LOGIC & 3D EARTH ENGINE                -->
+  <!-- ===================================================================== -->
+  <script>
+    // -----------------------------------------------------------------------
+    // A. CONFIDENTIAL PARTNER PASSWORD & AUTHENTICATION (Partner@2026)
+    // -----------------------------------------------------------------------
+    var launchBannerTimer = null;
+    var toastTimer = null;
+
+    // 3-Level Explorer State: 'industries' | 'brands' | 'products'
+    var explorerLevel = 'industries';
+    var selectedIndustryName = '';
+    var selectedBrandName = '';
+
+    var editingContext = { type: 'brand', index: -1 };
+
+    function getInitialsFromName(fullName) {
+      var parts = String(fullName || '').trim().split(/\s+/).filter(Boolean);
+      if (parts.length === 0) return 'GB';
+      if (parts.length === 1) return parts[0].substring(0, 2).toUpperCase();
+      return (parts[0][0] + parts[parts.length - 1][0]).toUpperCase();
+    }
+
+    function applyPartnerIdentity(nameStr, persist) {
+      var cleanName = String(nameStr || '').trim() || DEFAULT_WORKSPACE_IDENTITY;
+
+      activePartnerName = cleanName;
+      var initials = getInitialsFromName(cleanName);
+
+      // Update Avatars & Login Header
+      var loginAvatar = document.getElementById('loginAvatarInitials');
+      var loginTitle = document.getElementById('loginDialogTitle');
+      var loginFooter = document.getElementById('loginFooterCopy');
+      var execAvatar = document.getElementById('execCardAvatar');
+      var execName = document.getElementById('execCardName');
+      var navTitle = document.getElementById('navWorkspaceTitle');
+      var heroBio = document.getElementById('heroBioText');
+      var waTitle = document.getElementById('waSectionTitle');
+      var waDesc = document.getElementById('waSectionDesc');
+      var footerCopy = document.getElementById('footerCopyText');
+      var studioSub = document.getElementById('studioDrawerSub');
+
+      if (loginAvatar) loginAvatar.textContent = initials;
+      if (loginTitle) loginTitle.textContent = cleanName;
+      if (loginFooter) {
+        loginFooter.innerHTML = '&copy; 2026 Microsoft. Developed by Microsoft &mdash; Designed &amp; Developed exclusively for <strong>' + cleanName + '</strong>';
+      }
+      if (execAvatar) execAvatar.textContent = initials;
+      if (execName) execName.textContent = cleanName;
+      if (navTitle) navTitle.innerHTML = cleanName + ' &bull; Entrepreneur, Global Business';
+      if (heroBio) {
+        heroBio.innerHTML = 'Executive partnership portfolio of <strong>' + cleanName + '</strong>. Select any <strong>Industry</strong> below to explore aligned <strong>Brands</strong>, inspect <strong>Products</strong>, or open official brand portals directly.';
+      }
+      if (waTitle) waTitle.textContent = 'Partner With ' + cleanName;
+      if (waDesc) {
+        waDesc.innerHTML = 'Submit your inquiry below to send a structured message directly to ' + cleanName + '&rsquo;s WhatsApp for business development partnerships across our <strong>247+ Brands In-House</strong> portfolio or product consultations.';
+      }
+      if (footerCopy) {
+        footerCopy.innerHTML = '&copy; 2026 Microsoft. Developed by Microsoft &mdash; Designed &amp; Developed exclusively for <strong>' + cleanName + '</strong>';
+      }
+      if (studioSub) {
+        studioSub.textContent = 'Full live customization for ' + cleanName;
+      }
+
+      document.title = cleanName + ' | Executive Partner Workspace — Microsoft';
+
+      if (persist) {
+        try { localStorage.setItem('gbp_ms_partner_name', cleanName); } catch (e) {}
+        saveAllPortfolioEdits(true);
+      }
+    }
+
+    function togglePasswordVisibility() {
+      var inp = document.getElementById('partnerPasswordInput');
+      var btn = document.getElementById('togglePwdBtn');
+      if (!inp || !btn) return;
+      if (inp.type === 'password') {
+        inp.type = 'text';
+        btn.textContent = 'Hide';
+      } else {
+        inp.type = 'password';
+        btn.textContent = 'Show';
+      }
+    }
+
+    function verifyPartnerLogin() {
+      var nameInp = document.getElementById('partnerNameInput');
+      var inp = document.getElementById('partnerPasswordInput');
+      var err = document.getElementById('partnerErrorMsg');
+      var enteredPwd = inp ? inp.value.trim() : '';
+      var enteredName = nameInp ? nameInp.value.trim() : '';
+
+      if (enteredPwd === PARTNER_SECRET) {
+        if (err) err.style.display = 'none';
+        if (inp) inp.value = '';
+        if (enteredName) {
+          applyPartnerIdentity(enteredName, true);
+        }
+        enterWorkspace('partner');
+      } else {
+        if (err) err.style.display = 'block';
+      }
+    }
+
+    function enterWorkspace(role) {
+      currentSessionRole = role === 'partner' ? 'partner' : 'guest';
+
+      // Ensure Guest Access always displays Global Business Partnership unless signed in via Partner Login
+      if (currentSessionRole === 'guest') {
+        applyPartnerIdentity(DEFAULT_WORKSPACE_IDENTITY, false);
+      }
+
+      var gateway = document.getElementById('loginGateway');
+      if (gateway) gateway.style.display = 'none';
+
+      var roleLabel = document.getElementById('activeRoleLabel');
+      var roleDot = document.getElementById('activeRoleDot');
+      var partnerBanner = document.getElementById('partnerModeBanner');
+      var studioControls = document.getElementById('partnerStudioControls');
+      var waEditBtn = document.getElementById('btnToggleWaEditor');
+      var waEditorBox = document.getElementById('whatsAppNumberEditor');
+
+      if (currentSessionRole === 'partner') {
+        if (roleLabel) roleLabel.textContent = 'Partner Mode';
+        if (roleDot) roleDot.style.background = '#10B981';
+        if (partnerBanner) partnerBanner.style.display = 'block';
+        if (studioControls) studioControls.style.display = 'flex';
+        if (waEditBtn) waEditBtn.style.display = 'inline-block';
+      } else {
+        if (roleLabel) roleLabel.textContent = 'Guest Mode';
+        if (roleDot) roleDot.style.background = '#0078D4';
+        if (partnerBanner) partnerBanner.style.display = 'none';
+        if (studioControls) studioControls.style.display = 'none';
+        // Freeze WhatsApp number editing for guests
+        if (waEditBtn) waEditBtn.style.display = 'none';
+        if (waEditorBox) waEditorBox.style.display = 'none';
+        if (isEditModeActive) setEditMode(false);
+      }
+
+      updateDisplayedWhatsApp();
+      renderAllSections();
+      resizeEarthCanvas();
+
+      showToast(
+        currentSessionRole === 'partner' ? 'Partner Studio Unlocked — ' + activePartnerName : 'Welcome to Executive Portfolio',
+        currentSessionRole === 'partner'
+          ? 'Portfolio personalized for ' + activePartnerName + '. Top-right Edit Mode & Partner Studio are active.'
+          : 'Click any Industry to explore Brands and Products.'
+      );
+    }
+
+    function returnToLoginGateway() {
+      if (isEditModeActive) setEditMode(false);
+      var gateway = document.getElementById('loginGateway');
+      if (gateway) gateway.style.display = 'flex';
+    }
+
+    // -----------------------------------------------------------------------
+    // B. 6 CORE INDUSTRIES -> BRANDS -> PRODUCTS DATA ARCHITECTURE
+    // -----------------------------------------------------------------------
+    function getBrandLogoSvg(brandName, monogram) {
+      var key = String(brandName || '').toLowerCase();
+      if (key.indexOf('bernhard') !== -1) {
+        return '<svg viewBox="0 0 148 30" aria-label="Bernhard H. Mayer Logo">' +
+          '<circle cx="14" cy="15" r="11" fill="#0B1220" stroke="#C59B27" stroke-width="1.6"/>' +
+          '<text x="14" y="19" text-anchor="middle" font-family="Georgia, serif" font-size="10" font-weight="700" fill="#FBBF24">BM</text>' +
+          '<text x="31" y="14" font-family="Georgia, serif" font-size="10.5" font-weight="700" letter-spacing="0.8" fill="#0B1220">BERNHARD</text>' +
+          '<text x="31" y="24" font-family="Georgia, serif" font-size="9" font-weight="700" letter-spacing="1.2" fill="#92400E">H. MAYER</text>' +
+        '</svg>';
+      }
+      if (key.indexOf('cimier') !== -1) {
+        return '<svg viewBox="0 0 126 30" aria-label="Cimier Logo">' +
+          '<polygon points="14,4 24,15 14,26 4,15" fill="#004578"/>' +
+          '<circle cx="14" cy="15" r="4" fill="#FFFFFF"/>' +
+          '<text x="30" y="20" font-family="Segoe UI, Arial, sans-serif" font-size="14.5" font-weight="800" letter-spacing="1.6" fill="#004578">CIMIER</text>' +
+        '</svg>';
+      }
+      if (key.indexOf('mugnier') !== -1) {
+        return '<svg viewBox="0 0 134 30" aria-label="Mugnier Logo">' +
+          '<rect x="4" y="4" width="22" height="22" rx="5" fill="#0B1220" stroke="#C59B27" stroke-width="1.5"/>' +
+          '<text x="15" y="19" text-anchor="middle" font-family="Georgia, serif" font-size="11.5" font-weight="700" fill="#FBBF24">M</text>' +
+          '<text x="32" y="20" font-family="Georgia, serif" font-size="14" font-weight="700" letter-spacing="1.3" fill="#1E293B">MUGNIER</text>' +
+        '</svg>';
+      }
+      if (key.indexOf('chairos') !== -1) {
+        return '<svg viewBox="0 0 132 30" aria-label="CHAIROS Logo">' +
+          '<circle cx="14" cy="15" r="10.5" fill="none" stroke="#0284C7" stroke-width="2"/>' +
+          '<polyline points="14,9 14,15 19,17" fill="none" stroke="#0F172A" stroke-width="1.8" stroke-linecap="round"/>' +
+          '<text x="30" y="20" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="900" letter-spacing="1.2" fill="#0F172A">CHAIROS</text>' +
+        '</svg>';
+      }
+      if (key.indexOf('kinnari') !== -1) {
+        return '<svg viewBox="0 0 130 30" aria-label="Kinnari Logo">' +
+          '<polygon points="15,4 25,13 15,27 5,13" fill="none" stroke="#B45309" stroke-width="1.8"/>' +
+          '<polyline points="5,13 25,13" stroke="#D97706" stroke-width="1.2"/>' +
+          '<text x="31" y="20" font-family="Georgia, serif" font-size="14" font-weight="700" letter-spacing="1.3" fill="#78350F">KINNARI</text>' +
+        '</svg>';
+      }
+      if (key.indexOf('amezcua') !== -1) {
+        return '<svg viewBox="0 0 136 30" aria-label="Amezcua Logo">' +
+          '<circle cx="15" cy="15" r="10" fill="none" stroke="#00B7C3" stroke-width="2"/>' +
+          '<circle cx="15" cy="15" r="5" fill="none" stroke="#0E7490" stroke-width="1.6"/>' +
+          '<circle cx="15" cy="15" r="2" fill="#00B7C3"/>' +
+          '<text x="31" y="20" font-family="Segoe UI, Arial, sans-serif" font-size="13.5" font-weight="800" letter-spacing="1.1" fill="#0E7490">AMEZCUA</text>' +
+        '</svg>';
+      }
+      if (key.indexOf('nutriplus') !== -1) {
+        return '<svg viewBox="0 0 138 30" aria-label="Nutriplus Logo">' +
+          '<path d="M15 5 C21 8 23 15 19 22 C15 26 9 24 8 18 C7 12 11 7 15 5 Z" fill="#10B981"/>' +
+          '<path d="M15 9 L15 22 M12 14 L15 17 L18 13" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round" fill="none"/>' +
+          '<text x="29" y="20" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="800" letter-spacing="0.6" fill="#065F46">Nutriplus</text>' +
+        '</svg>';
+      }
+      if (key.indexOf('homepure') !== -1) {
+        return '<svg viewBox="0 0 140 30" aria-label="HomePure Logo">' +
+          '<path d="M15 4 C15 4 7 13.5 7 19 C7 23.4 10.6 27 15 27 C19.4 27 23 23.4 23 19 C23 13.5 15 4 15 4 Z" fill="#0EA5E9"/>' +
+          '<path d="M11 18 L15 14 L19 18" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round" fill="none"/>' +
+          '<text x="29" y="20" font-family="Segoe UI, Arial, sans-serif" font-size="13.5" font-weight="800" letter-spacing="0.4" fill="#0369A1">HomePure</text>' +
+        '</svg>';
+      }
+      if (key.indexOf('sharp') !== -1) {
+        return '<svg viewBox="0 0 112 30" aria-label="SHARP Logo">' +
+          '<text x="56" y="21" text-anchor="middle" font-family="Arial Black, Segoe UI, sans-serif" font-size="17" font-weight="900" letter-spacing="1.6" fill="#E60012">SHARP</text>' +
+        '</svg>';
+      }
+      if (key.indexOf('kent') !== -1) {
+        return '<svg viewBox="0 0 114 30" aria-label="KENT Logo">' +
+          '<path d="M14 4 C14 4 7 13 7 18.5 C7 22.6 10.1 26 14 26 C17.9 26 21 22.6 21 18.5 C21 13 14 4 14 4 Z" fill="#0072CE"/>' +
+          '<text x="28" y="21" font-family="Segoe UI, Arial, sans-serif" font-size="16.5" font-weight="900" letter-spacing="1.3" fill="#00529B">KENT</text>' +
+        '</svg>';
+      }
+      if (key.indexOf('physio') !== -1) {
+        return '<svg viewBox="0 0 154 30" aria-label="Physio Radiance Logo">' +
+          '<circle cx="14" cy="15" r="10" fill="#831843"/>' +
+          '<path d="M14 8 L15.8 13.2 L21 15 L15.8 16.8 L14 22 L12.2 16.8 L7 15 L12.2 13.2 Z" fill="#FBCFE8"/>' +
+          '<text x="29" y="14" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" font-weight="800" letter-spacing="0.8" fill="#831843">PHYSIO</text>' +
+          '<text x="29" y="24" font-family="Segoe UI, Arial, sans-serif" font-size="9.5" font-weight="700" letter-spacing="1" fill="#DB2777">RADIANCE</text>' +
+        '</svg>';
+      }
+      if (key.indexOf('biosilver') !== -1) {
+        return '<svg viewBox="0 0 144 30" aria-label="BioSilver Logo">' +
+          '<polygon points="14,4 23,9.5 23,20.5 14,26 5,20.5 5,9.5" fill="#0F766E"/>' +
+          '<text x="14" y="18.5" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="9.5" font-weight="800" fill="#FFFFFF">Ag</text>' +
+          '<text x="29" y="20" font-family="Segoe UI, Arial, sans-serif" font-size="13.5" font-weight="800" fill="#0F766E">BioSilver 22</text>' +
+        '</svg>';
+      }
+      if (key.indexOf('beyoute') !== -1) {
+        return '<svg viewBox="0 0 132 30" aria-label="BeYouTe Logo">' +
+          '<path d="M14 5 C19 10 21 17 14 25 C7 17 9 10 14 5 Z" fill="#EA580C"/>' +
+          '<text x="27" y="20" font-family="Georgia, serif" font-size="14.5" font-weight="700" fill="#7C2D12">BeYouTe’</text>' +
+        '</svg>';
+      }
+      if (key.indexOf('qvi') !== -1) {
+        return '<svg viewBox="0 0 134 30" aria-label="QVI Club Logo">' +
+          '<circle cx="14" cy="15" r="10.5" fill="#065F46"/>' +
+          '<text x="14" y="19" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="10" font-weight="800" fill="#6EE7B7">QVI</text>' +
+          '<text x="30" y="20" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="800" letter-spacing="0.6" fill="#065F46">QVI Club</text>' +
+        '</svg>';
+      }
+      if (key.indexOf('tripsavr') !== -1) {
+        return '<svg viewBox="0 0 132 30" aria-label="tripsavr Logo">' +
+          '<circle cx="14" cy="15" r="10.5" fill="#0D9488"/>' +
+          '<path d="M9 16 L19 11 L15 21 L13.5 17 Z" fill="#FFFFFF"/>' +
+          '<text x="30" y="20" font-family="Segoe UI, Arial, sans-serif" font-size="14.5" font-weight="800" fill="#0F766E">tripsavr</text>' +
+        '</svg>';
+      }
+      if (key.indexOf('qlearn') !== -1) {
+        return '<svg viewBox="0 0 128 30" aria-label="qLearn Logo">' +
+          '<polygon points="14,6 25,12 14,18 3,12" fill="#3730A3"/>' +
+          '<path d="M8 15 L8 21 C8 23 20 23 20 21 L20 15" fill="none" stroke="#4F46E5" stroke-width="1.8"/>' +
+          '<text x="30" y="20" font-family="Segoe UI, Arial, sans-serif" font-size="14.5" font-weight="800" fill="#3730A3">qLearn</text>' +
+        '</svg>';
+      }
+      return '<svg viewBox="0 0 120 30" aria-label="' + escapeAttr(brandName) + ' Logo">' +
+        '<rect x="3" y="4" width="22" height="22" rx="6" fill="#0078D4"/>' +
+        '<text x="14" y="19" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="10.5" font-weight="800" fill="#FFFFFF">' + escapeAttr(monogram || 'BR') + '</text>' +
+        '<text x="31" y="20" font-family="Segoe UI, sans-serif" font-size="13" font-weight="800" fill="#201F1E">' + escapeAttr(String(brandName || '').substring(0, 12)) + '</text>' +
+      '</svg>';
+    }
+
+    var INDUSTRIES = [
+      {
+        name: 'Luxury Watches',
+        badge: 'Swiss Horology & Fine Jewellery',
+        icon: '&#9201;',
+        subtitle: 'Limited-edition Swiss mechanical watches, chronographs, couple dress watches & hallmarked diamond jewellery.',
+        gradient: 'linear-gradient(135deg, #0B1220 0%, #1E3A8A 60%, #92400E 100%)'
+      },
+      {
+        name: 'Health',
+        badge: 'Bio-Energy & Clinical Nutrition',
+        icon: '&#10024;',
+        subtitle: 'Bio Disc 3, Chi Pendant 4, Bio Light 3, Harmoniq & targeted clinical supplements, Celesteal teas & Qafé.',
+        gradient: 'linear-gradient(135deg, #042F2E 0%, #0E7490 65%, #00B7C3 100%)'
+      },
+      {
+        name: 'Wellness (Water Purifier / Air Purifier)',
+        badge: 'NSF & Plasmacluster Living',
+        icon: '&#128167;',
+        subtitle: '9-stage Pi-Water ultrafiltration, Smart Alkaline Mineral RO, H14 HEPA & Plasmacluster air purifiers.',
+        gradient: 'linear-gradient(135deg, #082F49 0%, #0369A1 65%, #0EA5E9 100%)'
+      },
+      {
+        name: 'Skincare',
+        badge: 'Made in Switzerland & Botanicals',
+        icon: '&#128142;',
+        subtitle: 'Swiss prebiotic & micro-current cellular anti-aging skincare, Visage+ device, BioSilver 22 Gel & Argan Pure.',
+        gradient: 'linear-gradient(135deg, #3B0764 0%, #831843 65%, #DB2777 100%)'
+      },
+      {
+        name: 'Travel & Tourism',
+        badge: '1,000+ Resorts & 400K+ Hotels',
+        icon: '&#9992;',
+        subtitle: 'Multi-year luxury vacation ownership across 60+ countries and wholesale member travel portal worldwide.',
+        gradient: 'linear-gradient(135deg, #064E3B 0%, #047857 65%, #10B981 100%)'
+      },
+      {
+        name: 'Education',
+        badge: 'CPD Accredited Academy',
+        icon: '&#127891;',
+        subtitle: 'CPD-accredited online executive certifications in leadership, digital entrepreneurship & global finance.',
+        gradient: 'linear-gradient(135deg, #1E1B4B 0%, #3730A3 65%, #4F46E5 100%)'
+      }
+    ];
+
+    var DEFAULT_BRAND_HOUSES = [
+      // 1. Luxury Watches
+      {
+        industry: 'Luxury Watches',
+        name: 'Bernhard H. Mayer',
+        monogram: 'BM',
+        origin: 'Switzerland • Est. 1871',
+        summary: 'Limited-edition Swiss mechanical watches, chronographs, and 18K fine jewellery collections.',
+        partnerNote: 'Flagship luxury tier (32%–40% executive margin) with collector resale prestige.',
+        accent: 'linear-gradient(135deg, #0B1220 0%, #92400E 100%)',
+        url: 'https://www.bernhardhmayer.com/'
+      },
+      {
+        industry: 'Luxury Watches',
+        name: 'Cimier',
+        monogram: 'CM',
+        origin: 'Biel/Bienne, Switzerland',
+        summary: 'Contemporary Swiss automatic chronographs and hand-wound horological ateliers.',
+        partnerNote: 'High appeal across sports executives and international leadership circles.',
+        accent: 'linear-gradient(135deg, #004578 0%, #0078D4 100%)',
+        url: 'https://www.cimier.com/'
+      },
+      {
+        industry: 'Luxury Watches',
+        name: 'Mugnier',
+        monogram: 'MG',
+        origin: 'Swiss Horology Atelier',
+        summary: 'Precision mechanical and automatic timepieces including Aristo, GMT Time Traveller, Semper, Mode, and Invictus collections.',
+        partnerNote: 'Strong executive gifting and collector demand across South Asian & global hubs.',
+        accent: 'linear-gradient(135deg, #1E293B 0%, #B45309 100%)',
+        url: 'https://www.mugnierwatch.com/'
+      },
+      {
+        industry: 'Luxury Watches',
+        name: 'CHAIROS',
+        monogram: 'CH',
+        origin: 'Precision Dress & Sport',
+        summary: 'Contemporary dress, sports, and couple timepieces featuring Signature Opus, Crusader, Alpine Neo, and Chrono+.',
+        partnerNote: 'High-velocity corporate milestone and daily executive wear collection.',
+        accent: 'linear-gradient(135deg, #0F172A 0%, #0284C7 100%)',
+        url: 'https://www.chairoswatch.com/'
+      },
+      {
+        industry: 'Luxury Watches',
+        name: 'Kinnari',
+        monogram: 'KN',
+        origin: 'The Royal Collection',
+        summary: 'Hallmarked gold and diamond-studded fine jewellery ensembles crafted for timeless elegance.',
+        partnerNote: 'High-value celebratory and heirloom luxury jewellery portfolio.',
+        accent: 'linear-gradient(135deg, #78350F 0%, #D97706 100%)',
+        url: 'https://www.kinnarijewels.com/'
+      },
+
+      // 2. Health
+      {
+        industry: 'Health',
+        name: 'Amezcua',
+        monogram: 'AZ',
+        origin: 'Quantum Bio-Energy Tech',
+        summary: 'Bio Disc 3, Chi Pendant 4, Bio Light 3 & Harmoniq cellular harmonizing wellness instruments.',
+        partnerNote: 'High live-demonstration conversion velocity and global wellness demand.',
+        accent: 'linear-gradient(135deg, #0E7490 0%, #00B7C3 100%)',
+        url: 'https://www.amezcua.com/'
+      },
+      {
+        industry: 'Health',
+        name: 'Nutriplus',
+        monogram: 'NP',
+        origin: 'Clinical Nutrition & Superfoods',
+        summary: 'DailyHealth, ImmunHealth, BoneHealth, SkinHealth, DiabaHealth, FibreFit, Celesteal Teas, and Qafé.',
+        partnerNote: 'Recurring monthly replenishment cycle across health-conscious households.',
+        accent: 'linear-gradient(135deg, #065F46 0%, #10B981 100%)',
+        url: 'https://www.nutriplushealth.com/'
+      },
+
+      // 3. Wellness (Water Purifier / Air Purifier)
+      {
+        industry: 'Wellness (Water Purifier / Air Purifier)',
+        name: 'HomePure',
+        monogram: 'HP',
+        origin: 'NSF Certified Water & Air',
+        summary: '9-stage Pi-Water ultrafiltration systems (Nova), NovaSoft, and H14 HEPA medical-grade air purifiers (Zayn).',
+        partnerNote: 'Recurring annual cartridge replacement annuity across urban households.',
+        accent: 'linear-gradient(135deg, #0369A1 0%, #0EA5E9 100%)',
+        url: 'https://www.homepure.com/'
+      },
+      {
+        industry: 'Wellness (Water Purifier / Air Purifier)',
+        name: 'SHARP Air Purifiers',
+        monogram: 'SH',
+        origin: 'Plasmacluster Ion Tech',
+        summary: 'ZENsational Plasmacluster Ion & HEPA Air Purifier with integrated humidifier and SmartAir IoT Wi-Fi models.',
+        partnerNote: 'Trusted Japanese air purification engineering for urban metropolitan residences.',
+        accent: 'linear-gradient(135deg, #1E3A8A 0%, #2563EB 100%)',
+        url: 'https://in.sharp/b2c/air-purifier/'
+      },
+      {
+        industry: 'Wellness (Water Purifier / Air Purifier)',
+        name: 'KENT Water Purifiers',
+        monogram: 'KT',
+        origin: 'Mineral RO & Alkaline Tech',
+        summary: 'Smart Alkaline Mineral RO Water Purifier with multi-stage purification, TDS controller, and pH enhancement.',
+        partnerNote: 'High household adoption with annual filter and AMC replenishment.',
+        accent: 'linear-gradient(135deg, #0C4A6E 0%, #0284C7 100%)',
+        url: 'https://www.kent.co.in/'
+      },
+
+      // 4. Skincare
+      {
+        industry: 'Skincare',
+        name: 'Physio Radiance',
+        monogram: 'PR',
+        origin: 'Made in Switzerland',
+        summary: 'Swiss prebiotic, probiotic, and micro-current cellular anti-aging skincare & Visage+ facial device.',
+        partnerNote: 'Consistent 60-day replenishment cycle in premium aesthetic demographics.',
+        accent: 'linear-gradient(135deg, #831843 0%, #DB2777 100%)',
+        url: 'https://www.physioradiance.com/'
+      },
+      {
+        industry: 'Skincare',
+        name: 'BioSilver & Prospark',
+        monogram: 'BS',
+        origin: 'SilverSol & Natural Care',
+        summary: 'BioSilver 22 SilverSol antibacterial skin cleansing gel and Prospark natural anti-inflammatory oral care.',
+        partnerNote: 'High-frequency daily personal hygiene essentials with rapid repeat orders.',
+        accent: 'linear-gradient(135deg, #0F766E 0%, #14B8A6 100%)',
+        url: 'https://www.biosilver22.com/'
+      },
+      {
+        industry: 'Skincare',
+        name: 'BeYouTe’ Botanicals',
+        monogram: 'BY',
+        origin: '100% Pure Moroccan Argan',
+        summary: 'BeYouTe’ Argan Pure multi-purpose cold-pressed grooming, skin, and hair nourishment oil.',
+        partnerNote: 'Clean-beauty staple with strong repeat personal care demand.',
+        accent: 'linear-gradient(135deg, #7C2D12 0%, #EA580C 100%)',
+        url: 'https://www.beyoutecare.com/'
+      },
+
+      // 5. Travel & Tourism
+      {
+        industry: 'Travel & Tourism',
+        name: 'QVI Club & QVI Vacay',
+        monogram: 'QV',
+        origin: '1,000+ Global Resorts',
+        summary: 'Multi-year luxury vacation ownership and curated resort stays across 60+ countries worldwide.',
+        partnerNote: 'High-retention family & corporate incentive travel membership tier.',
+        accent: 'linear-gradient(135deg, #064E3B 0%, #059669 100%)',
+        url: 'https://www.myqvi.com/qvi-club/'
+      },
+      {
+        industry: 'Travel & Tourism',
+        name: 'tripsavr',
+        monogram: 'TS',
+        origin: '400,000+ Hotels Worldwide',
+        summary: 'Exclusive member travel portal offering wholesale rates on hotels, flights & car rentals.',
+        partnerNote: 'Instant digital onboarding and year-round corporate travel savings.',
+        accent: 'linear-gradient(135deg, #0D9488 0%, #2DD4BF 100%)',
+        url: 'https://www.myqvi.com/qvi-tripsavr/'
+      },
+
+      // 6. Education
+      {
+        industry: 'Education',
+        name: 'qLearn',
+        monogram: 'QL',
+        origin: 'CPD Accredited Academy',
+        summary: 'Executive e-learning certifications in leadership, digital commerce & global finance.',
+        partnerNote: 'Core training curriculum for scaling global business development teams.',
+        accent: 'linear-gradient(135deg, #3730A3 0%, #6366F1 100%)',
+        url: 'https://www.myqlearn.org/'
+      }
+    ];
+
+    var DEFAULT_PRODUCTS = [
+      // Luxury Watches Products
+      {
+        brand: 'Bernhard H. Mayer',
+        category: 'Luxury Watches',
+        title: 'Bernhard H. Mayer La Vida Limited Edition & Alto Ceramic',
+        spec: 'Swiss Made • Limited Edition • High-Tech Ceramic',
+        desc: 'Collector-grade Swiss mechanical and scratch-resistant ceramic chronographs engineered for global executives.',
+        partnerNote: 'High-ticket collector centerpiece with strong repeat demand and executive margin tier (32%–40%).',
+        gradient: 'linear-gradient(135deg, #0B1220 0%, #1E3A8A 60%, #92400E 100%)',
+        url: 'https://www.bernhardhmayer.com/'
+      },
+      {
+        brand: 'Bernhard H. Mayer',
+        category: 'Luxury Watches',
+        title: 'Bernhard H. Mayer Pearl Icons Jewellery Suite',
+        spec: '18K Solid Gold • Akoya & South Sea Pearls',
+        desc: 'Luminous pearl and 18K gold fine jewellery ensemble crafted for timeless elegance and milestone gifting.',
+        partnerNote: 'Strong high-net-worth client retention and celebratory gifting volume.',
+        gradient: 'linear-gradient(135deg, #271C19 0%, #78350F 65%, #C59B27 100%)',
+        url: 'https://www.bernhardhmayer.com/'
+      },
+      {
+        brand: 'Cimier',
+        category: 'Luxury Watches',
+        title: 'Cimier Sportive Automatic & Petite Seconde Mechanical',
+        spec: 'Biel/Bienne Atelier • Swiss Automatic & Hand-Wound',
+        desc: 'Championship-inspired Swiss automatic chronographs and classic dress watches with exhibition casebacks.',
+        partnerNote: 'Strong appeal among sports enthusiasts, entrepreneurs, and corporate leadership networks.',
+        gradient: 'linear-gradient(135deg, #082F49 0%, #004578 65%, #0078D4 100%)',
+        url: 'https://www.cimier.com/'
+      },
+      {
+        brand: 'Mugnier',
+        category: 'Luxury Watches',
+        title: 'Mugnier Aristo, GMT Time Traveller, Semper, Mode & Invictus',
+        spec: 'Swiss Horology • Automatic & Chronograph Series',
+        desc: 'Signature collection spanning Aristo Rose Gold, GMT Time Traveller, Semper Cervin Automatic, Mode Cinetique, and Invictus Mavros & Bleue.',
+        partnerNote: 'High-velocity luxury timepiece line favored for executive milestones.',
+        gradient: 'linear-gradient(135deg, #1E293B 0%, #334155 60%, #B45309 100%)',
+        url: 'https://www.mugnierwatch.com/'
+      },
+      {
+        brand: 'CHAIROS',
+        category: 'Luxury Watches',
+        title: 'CHAIROS Signature Opus Couple, Crusader, Alpine Neo & Chrono+',
+        spec: 'Precision Dress & Sport • Couple & Chronograph Editions',
+        desc: 'Complete timepiece lineup featuring Signature Opus Couple, Crusader, Alpine Neo, Amore, Florette, Azure, Diva, Starlet, Sniper, and Voyager.',
+        partnerNote: 'Versatile daily executive and celebratory couple watch portfolio.',
+        gradient: 'linear-gradient(135deg, #0F172A 0%, #1E3A8A 60%, #0284C7 100%)',
+        url: 'https://www.chairoswatch.com/'
+      },
+      {
+        brand: 'Kinnari',
+        category: 'Luxury Watches',
+        title: 'Kinnari Royal Gold & Diamond Jewellery Collection',
+        spec: 'Hallmarked Gold • Certified Diamond Craftsmanship',
+        desc: 'Curated fine jewellery line including Navya Aabharana diamond bracelets, Daisy, Mira, Mihika, Ayana, Utara, Nila, Tarini, Vaidurya, Vira, and Ziva.',
+        partnerNote: 'High-value celebratory, bridal, and heirloom gifting category.',
+        gradient: 'linear-gradient(135deg, #451A03 0%, #92400E 65%, #F59E0B 100%)',
+        url: 'https://www.kinnarijewels.com/'
+      },
+
+      // Health Products
+      {
+        brand: 'Amezcua',
+        category: 'Health',
+        title: 'Amezcua Bio Disc 3, Chi Pendant 4, Bio Light 3 & Harmoniq',
+        spec: 'Quantum Geometry • Lab Certified Bio-Energy',
+        desc: 'Bio-energetic wellness instruments engineered to structure drinking water, harmonize personal bio-fields, and support holistic recovery.',
+        partnerNote: 'Global wellness flagship with compelling live demonstration appeal and strong referral velocity.',
+        gradient: 'linear-gradient(135deg, #042F2E 0%, #0E7490 65%, #00B7C3 100%)',
+        url: 'https://www.amezcua.com/'
+      },
+      {
+        brand: 'Nutriplus',
+        category: 'Health',
+        title: 'Nutriplus Targeted Supplements & Superfoods Range',
+        spec: 'DailyHealth • ImmunHealth • BoneHealth • DiabaHealth • FibreFit',
+        desc: 'Comprehensive daily nutrition featuring DailyHealth, ImmunHealth, BoneHealth, SkinHealth, DiabaHealth, GutHealth, FibreFit, and Kids Protein.',
+        partnerNote: 'High-retention monthly family wellness subscription behavior.',
+        gradient: 'linear-gradient(135deg, #064E3B 0%, #047857 65%, #10B981 100%)',
+        url: 'https://www.nutriplushealth.com/'
+      },
+      {
+        brand: 'Nutriplus',
+        category: 'Health',
+        title: 'Nutriplus Celesteal Teas, Qafé, Natose Stevia, VCO & Honey',
+        spec: 'Botanical Teas • Unroasted Green Coffee • Virgin Coconut Oil',
+        desc: 'Functional pantry essentials including Celesteal Rose, Kahwa & Exotic Blend teas, Qafé green coffee mix, Natose Stevia, VCO, and Monofloral Honey.',
+        partnerNote: 'Everyday consumable staples driving repeat household orders.',
+        gradient: 'linear-gradient(135deg, #14532D 0%, #15803D 65%, #22C55E 100%)',
+        url: 'https://www.nutriplushealth.com/'
+      },
+
+      // Wellness (Water Purifier / Air Purifier) Products
+      {
+        brand: 'HomePure',
+        category: 'Wellness (Water Purifier / Air Purifier)',
+        title: 'HomePure Nova 9-Stage Water Filtration & NovaSoft',
+        spec: 'NSF/ANSI Certified • Pi-Water Ultrafiltration',
+        desc: 'Removes 99.9999% of bacteria and viruses while preserving essential minerals—operates with zero electricity alongside HomePure Complete & Prefilter.',
+        partnerNote: 'Recurring annual filter cartridge replacements create predictable long-term household volume.',
+        gradient: 'linear-gradient(135deg, #082F49 0%, #0369A1 65%, #0EA5E9 100%)',
+        url: 'https://www.homepure.com/'
+      },
+      {
+        brand: 'HomePure',
+        category: 'Wellness (Water Purifier / Air Purifier)',
+        title: 'HomePure Zayn H14 HEPA & UV-C Air Purifier',
+        spec: 'H14 HEPA • UV-C Light • Amezcua Card',
+        desc: 'Medical-grade indoor air purification capturing 99.99% of ultra-fine PM2.5 particles, allergens, and airborne pathogens.',
+        partnerNote: 'High urban household demand across metropolitan hubs.',
+        gradient: 'linear-gradient(135deg, #1E293B 0%, #0F766E 65%, #14B8A6 100%)',
+        url: 'https://www.homepure.com/'
+      },
+      {
+        brand: 'SHARP Air Purifiers',
+        category: 'Wellness (Water Purifier / Air Purifier)',
+        title: 'SHARP ZENsational & SmartAir IoT Wi-Fi Air Purifiers',
+        spec: 'Plasmacluster Ion • True HEPA • Humidification',
+        desc: 'Dual active Plasmacluster Ion and passive HEPA filtration with integrated humidification and smart Wi-Fi air quality monitoring.',
+        partnerNote: 'Trusted Japanese air purification technology for family wellness.',
+        gradient: 'linear-gradient(135deg, #0F172A 0%, #1D4ED8 65%, #38BDF8 100%)',
+        url: 'https://in.sharp/b2c/air-purifier/'
+      },
+      {
+        brand: 'KENT Water Purifiers',
+        category: 'Wellness (Water Purifier / Air Purifier)',
+        title: 'KENT Smart Alkaline Mineral RO Water Purifier',
+        spec: 'Multi-Stage Alkaline RO • TDS Controller • Mineral Retention',
+        desc: 'Advanced alkaline water purification system balancing pH levels up to 9.5 and enriching drinking water with essential minerals.',
+        partnerNote: 'Strong residential adoption with annual AMC and filter replenishment.',
+        gradient: 'linear-gradient(135deg, #0C4A6E 0%, #0284C7 65%, #38BDF8 100%)',
+        url: 'https://www.kent.co.in/'
+      },
+
+      // Skincare Products
+      {
+        brand: 'Physio Radiance',
+        category: 'Skincare',
+        title: 'Physio Radiance Cellular Regimen, AURA, Expert & Visage+',
+        spec: 'Made in Switzerland • Prebiotic & Probiotic + RF/Galvanic Device',
+        desc: 'Complete Swiss skincare line (Cleanser, Boosting Essence, Double Serum, Eye/Day/Night Creams, AURA, Expert) paired with the Visage+ facial device.',
+        partnerNote: 'Strong 60-day replenishment cycle across luxury skincare and aesthetic wellness demographics.',
+        gradient: 'linear-gradient(135deg, #3B0764 0%, #831843 65%, #DB2777 100%)',
+        url: 'https://www.physioradiance.com/'
+      },
+      {
+        brand: 'BioSilver & Prospark',
+        category: 'Skincare',
+        title: 'BioSilver 22 Cleansing Gel & Prospark Oral Care',
+        spec: 'SilverSol Technology • Natural Anti-Inflammatory Formula',
+        desc: 'BioSilver 22 antibacterial cleansing hand and skin gel paired with Prospark natural toothpaste for daily family hygiene.',
+        partnerNote: 'Fast-moving personal care essentials with broad everyday appeal.',
+        gradient: 'linear-gradient(135deg, #134E4A 0%, #0F766E 65%, #2DD4BF 100%)',
+        url: 'https://www.biosilver22.com/'
+      },
+      {
+        brand: 'BeYouTe’ Botanicals',
+        category: 'Skincare',
+        title: 'BeYouTe’ Argan Pure Multi-Purpose Botanical Oil',
+        spec: '100% Cold-Pressed Moroccan Argan Oil • Hair, Face & Body',
+        desc: 'Nutrient-rich cold-pressed Argan elixir formulated for deep hair restoration, skin hydration, and daily grooming.',
+        partnerNote: 'High-repeat botanical grooming favorite across all demographics.',
+        gradient: 'linear-gradient(135deg, #7C2D12 0%, #C2410C 65%, #FB923C 100%)',
+        url: 'https://www.beyoutecare.com/'
+      },
+
+      // Travel & Tourism Products
+      {
+        brand: 'QVI Club & QVI Vacay',
+        category: 'Travel & Tourism',
+        title: 'QVI Club & QVI Vacay Global Resort Membership',
+        spec: '1,000+ Resorts • 60+ Countries Worldwide',
+        desc: 'Multi-year luxury vacation club access offering curated family and executive stays across premier global destinations.',
+        partnerNote: 'High-value experiential membership with strong family and corporate incentive appeal.',
+        gradient: 'linear-gradient(135deg, #064E3B 0%, #047857 65%, #10B981 100%)',
+        url: 'https://www.myqvi.com/qvi-club/'
+      },
+      {
+        brand: 'tripsavr',
+        category: 'Travel & Tourism',
+        title: 'tripsavr Wholesale Global Travel Portal',
+        spec: '400,000+ Member Hotels • Flights & Car Rentals',
+        desc: 'Digital member travel wallet unlocking wholesale rates across 400,000+ hotels, international flights, and car rentals.',
+        partnerNote: 'Instant digital onboarding and year-round corporate travel savings.',
+        gradient: 'linear-gradient(135deg, #0D9488 0%, #0F766E 65%, #2DD4BF 100%)',
+        url: 'https://www.myqvi.com/qvi-tripsavr/'
+      },
+
+      // Education Products
+      {
+        brand: 'qLearn',
+        category: 'Education',
+        title: 'qLearn Executive Certification Suite',
+        spec: 'CPD Accredited • Self-Paced Global Access',
+        desc: 'Online certification courses in digital commerce, leadership, personal finance, and international scaling.',
+        partnerNote: 'Core training track for onboarding new business development partners worldwide.',
+        gradient: 'linear-gradient(135deg, #1E1B4B 0%, #3730A3 65%, #4F46E5 100%)',
+        url: 'https://www.myqlearn.org/'
+      }
+    ];
+
+    var brandHouses = JSON.parse(JSON.stringify(DEFAULT_BRAND_HOUSES));
+    var flagshipProducts = JSON.parse(JSON.stringify(DEFAULT_PRODUCTS));
+    var savedTextMap = {};
+
+    function loadSavedPortfolioState() {
+      try {
+        var wa = localStorage.getItem('sj_ms_whatsapp');
+        if (wa && wa.length >= 8) targetWhatsApp = wa;
+
+        var rawState = localStorage.getItem('gbp_ms_portfolio_cms_v1');
+        if (rawState) {
+          var parsed = JSON.parse(rawState);
+          if (Array.isArray(parsed.brandHouses)) brandHouses = parsed.brandHouses;
+          if (Array.isArray(parsed.flagshipProducts)) flagshipProducts = parsed.flagshipProducts;
+          if (parsed.textMap && typeof parsed.textMap === 'object') savedTextMap = parsed.textMap;
+        }
+      } catch (e) {}
+
+      // Apply saved inline text edits
+      var editableNodes = document.querySelectorAll('[data-editable]');
+      for (var i = 0; i < editableNodes.length; i++) {
+        var key = editableNodes[i].getAttribute('data-editable');
+        if (key && savedTextMap[key]) {
+          editableNodes[i].innerHTML = savedTextMap[key];
+        }
+      }
+
+      // Default to Global Business Partnership on initial load prior to Partner Login
+      applyPartnerIdentity(DEFAULT_WORKSPACE_IDENTITY, false);
+    }
+
+    function saveAllPortfolioEdits(silent) {
+      var editableNodes = document.querySelectorAll('[data-editable]');
+      for (var i = 0; i < editableNodes.length; i++) {
+        var key = editableNodes[i].getAttribute('data-editable');
+        if (key) {
+          savedTextMap[key] = editableNodes[i].innerHTML;
+        }
+      }
+
+      try {
+        localStorage.setItem('gbp_ms_portfolio_cms_v1', JSON.stringify({
+          brandHouses: brandHouses,
+          flagshipProducts: flagshipProducts,
+          textMap: savedTextMap
+        }));
+      } catch (e) {}
+
+      if (!silent) {
+        showToast('Changes Saved', 'All portfolio edits have been saved to your workspace.');
+      }
+    }
+
+    // -----------------------------------------------------------------------
+    // C. TOP-RIGHT PARTNER STUDIO & LIVE EDIT MODE CONTROLS
+    // -----------------------------------------------------------------------
+    function toggleEditMode() {
+      if (currentSessionRole !== 'partner') return;
+      setEditMode(!isEditModeActive);
+    }
+
+    function setEditMode(active) {
+      isEditModeActive = !!active;
+      var btn = document.getElementById('btnToggleEditMode');
+      var ribbon = document.getElementById('editModeRibbon');
+      var drawerBtn = document.getElementById('drawerEditModeBtnLabel');
+      var editableNodes = document.querySelectorAll('[data-editable]');
+
+      if (isEditModeActive) {
+        document.body.classList.add('edit-mode-active');
+        if (btn) {
+          btn.classList.add('active');
+          btn.innerHTML = '<span>&#9998; Edit Mode: ON</span>';
+        }
+        if (ribbon) ribbon.style.display = 'block';
+        if (drawerBtn) drawerBtn.textContent = 'Turn OFF Live Edit Mode';
+
+        for (var i = 0; i < editableNodes.length; i++) {
+          editableNodes[i].setAttribute('contenteditable', 'true');
+        }
+        showToast('Live Edit Mode Enabled', 'Click any outlined text or card Edit button to customize.');
+      } else {
+        document.body.classList.remove('edit-mode-active');
+        if (btn) {
+          btn.classList.remove('active');
+          btn.innerHTML = '<span>&#9998; Edit Mode: OFF</span>';
+        }
+        if (ribbon) ribbon.style.display = 'none';
+        if (drawerBtn) drawerBtn.textContent = 'Turn ON Live Edit Mode';
+
+        for (var j = 0; j < editableNodes.length; j++) {
+          editableNodes[j].removeAttribute('contenteditable');
+        }
+        saveAllPortfolioEdits(true);
+      }
+    }
+
+    function openPartnerStudioDrawer() {
+      if (currentSessionRole !== 'partner') return;
+      var drawer = document.getElementById('partnerStudioDrawer');
+      var waInp = document.getElementById('studioWhatsAppInput');
+      if (waInp) waInp.value = targetWhatsApp;
+      if (drawer) drawer.style.display = 'flex';
+    }
+
+    function closePartnerStudioDrawer() {
+      var drawer = document.getElementById('partnerStudioDrawer');
+      if (drawer) drawer.style.display = 'none';
+    }
+
+    function saveWhatsAppFromStudio() {
+      var inp = document.getElementById('studioWhatsAppInput');
+      if (!inp) return;
+      var digits = inp.value.replace(/\D/g, '');
+      if (digits.length < 8) {
+        showToast('Invalid Number', 'Include country code (e.g. 919876543210).');
+        return;
+      }
+      targetWhatsApp = digits;
+      try { localStorage.setItem('sj_ms_whatsapp', digits); } catch (e) {}
+      updateDisplayedWhatsApp();
+      showToast('WhatsApp Number Updated', 'Inquiries now route directly to +' + digits + '.');
+    }
+
+    function exportPortfolioBackup() {
+      saveAllPortfolioEdits(true);
+      var dataStr = JSON.stringify({
+        owner: activePartnerName,
+        exportedAt: new Date().toISOString(),
+        whatsapp: targetWhatsApp,
+        brandHouses: brandHouses,
+        flagshipProducts: flagshipProducts,
+        textMap: savedTextMap
+      }, null, 2);
+
+      var blob = new Blob([dataStr], { type: 'application/json' });
+      var url = URL.createObjectURL(blob);
+      var a = document.createElement('a');
+      a.href = url;
+      a.download = 'global-business-partnership-portfolio-backup.json';
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+      showToast('Backup Exported', 'Downloaded global-business-partnership-portfolio-backup.json.');
+    }
+
+    function triggerImportPortfolioBackup() {
+      var fileInput = document.getElementById('importJsonFileInput');
+      if (fileInput) {
+        fileInput.value = '';
+        fileInput.click();
+      }
+    }
+
+    function handleImportPortfolioBackup(event) {
+      var file = event.target && event.target.files && event.target.files[0];
+      if (!file) return;
+      var reader = new FileReader();
+      reader.onload = function (e) {
+        try {
+          var parsed = JSON.parse(e.target.result);
+          if (Array.isArray(parsed.brandHouses)) brandHouses = parsed.brandHouses;
+          if (Array.isArray(parsed.flagshipProducts)) flagshipProducts = parsed.flagshipProducts;
+          if (parsed.textMap && typeof parsed.textMap === 'object') savedTextMap = parsed.textMap;
+          if (parsed.whatsapp) {
+            targetWhatsApp = String(parsed.whatsapp).replace(/\D/g, '') || targetWhatsApp;
+            try { localStorage.setItem('sj_ms_whatsapp', targetWhatsApp); } catch (err) {}
+            updateDisplayedWhatsApp();
+          }
+
+          var editableNodes = document.querySelectorAll('[data-editable]');
+          for (var i = 0; i < editableNodes.length; i++) {
+            var key = editableNodes[i].getAttribute('data-editable');
+            if (key && savedTextMap[key]) {
+              editableNodes[i].innerHTML = savedTextMap[key];
+            }
+          }
+
+          saveAllPortfolioEdits(true);
+          renderAllSections();
+          closePartnerStudioDrawer();
+          showToast('Backup Imported', 'Your portfolio configuration has been restored.');
+        } catch (err) {
+          showToast('Import Failed', 'Please select a valid portfolio backup JSON file.');
+        }
+      };
+      reader.readAsText(file);
+    }
+
+    function resetPortfolioToDefault() {
+      brandHouses = JSON.parse(JSON.stringify(DEFAULT_BRAND_HOUSES));
+      flagshipProducts = JSON.parse(JSON.stringify(DEFAULT_PRODUCTS));
+      savedTextMap = {};
+      try {
+        localStorage.removeItem('gbp_ms_portfolio_cms_v1');
+        localStorage.removeItem('gbp_ms_partner_name');
+      } catch (e) {}
+      applyPartnerIdentity(DEFAULT_WORKSPACE_IDENTITY, false);
+      closePartnerStudioDrawer();
+      explorerLevel = 'industries';
+      selectedIndustryName = '';
+      selectedBrandName = '';
+      renderAllSections();
+      showToast('Portfolio Restored', 'All industries, brands, products, and default profile restored.');
+    }
+
+    // -----------------------------------------------------------------------
+    // D. ITEM MODAL EDITOR (ADD / EDIT / DELETE BRANDS & PRODUCTS)
+    // -----------------------------------------------------------------------
+    function openItemModal(type, index) {
+      if (currentSessionRole !== 'partner') return;
+      editingContext = { type: type, index: index };
+
+      var modal = document.getElementById('itemEditorModal');
+      var titleEl = document.getElementById('itemModalTitle');
+      var f1Label = document.getElementById('field1Label');
+      var f2Label = document.getElementById('field2Label');
+      var f3Label = document.getElementById('field3Label');
+      var f4Label = document.getElementById('field4Label');
+      var f5Group = document.getElementById('field5Group');
+
+      var f1 = document.getElementById('modalField1');
+      var f2 = document.getElementById('modalField2');
+      var f3 = document.getElementById('modalField3');
+      var f4 = document.getElementById('modalField4');
+      var f5 = document.getElementById('modalField5');
+      var fUrl = document.getElementById('modalFieldUrl');
+
+      var isNew = index < 0;
+
+      if (type === 'brand') {
+        titleEl.textContent = isNew ? 'Add New Brand' : 'Edit Brand';
+        f1Label.textContent = 'Brand Name *';
+        f2Label.textContent = 'Industry (Luxury Watches, Health, Wellness (Water Purifier / Air Purifier), Skincare, Travel & Tourism, Education) *';
+        f3Label.textContent = 'Origin / Heritage Tag *';
+        f4Label.textContent = 'Brand Summary *';
+        f5Group.style.display = 'block';
+
+        var b = isNew
+          ? { name: '', industry: selectedIndustryName || 'Luxury Watches', origin: 'Official Partner Brand', summary: '', partnerNote: 'Executive distribution tier.', url: 'https://' }
+          : brandHouses[index];
+        f1.value = b.name;
+        f2.value = b.industry;
+        f3.value = b.origin;
+        f4.value = b.summary;
+        f5.value = b.partnerNote || '';
+        fUrl.value = b.url;
+      } else {
+        titleEl.textContent = isNew ? 'Add New Product' : 'Edit Product';
+        f1Label.textContent = 'Product Title *';
+        f2Label.textContent = 'Brand Name *';
+        f3Label.textContent = 'Industry Name *';
+        f4Label.textContent = 'Product Description *';
+        f5Group.style.display = 'block';
+
+        var p = isNew
+          ? { title: '', brand: selectedBrandName || '', category: selectedIndustryName || 'Luxury Watches', desc: '', partnerNote: 'High-retention flagship product.', url: 'https://' }
+          : flagshipProducts[index];
+        f1.value = p.title;
+        f2.value = p.brand;
+        f3.value = p.category;
+        f4.value = p.desc;
+        f5.value = p.partnerNote || '';
+        fUrl.value = p.url;
+      }
+
+      if (modal) modal.style.display = 'flex';
+    }
+
+    function closeItemModal() {
+      var modal = document.getElementById('itemEditorModal');
+      if (modal) modal.style.display = 'none';
+    }
+
+    function saveItemModal(event) {
+      event.preventDefault();
+      var f1 = document.getElementById('modalField1').value.trim();
+      var f2 = document.getElementById('modalField2').value.trim();
+      var f3 = document.getElementById('modalField3').value.trim();
+      var f4 = document.getElementById('modalField4').value.trim();
+      var f5 = document.getElementById('modalField5').value.trim();
+      var fUrl = document.getElementById('modalFieldUrl').value.trim();
+
+      var type = editingContext.type;
+      var idx = editingContext.index;
+
+      if (type === 'brand') {
+        var brandObj = {
+          name: f1,
+          industry: f2 || 'Luxury Watches',
+          origin: f3,
+          monogram: f1.substring(0, 2).toUpperCase(),
+          summary: f4,
+          partnerNote: f5 || 'Executive partner alliance.',
+          accent: idx >= 0 && brandHouses[idx] ? brandHouses[idx].accent : 'linear-gradient(135deg, #004578 0%, #0078D4 100%)',
+          url: fUrl
+        };
+        if (idx >= 0) brandHouses[idx] = brandObj;
+        else brandHouses.push(brandObj);
+      } else {
+        var prodObj = {
+          title: f1,
+          brand: f2,
+          category: f3 || 'Luxury Watches',
+          spec: idx >= 0 && flagshipProducts[idx] ? flagshipProducts[idx].spec : 'Official Brand Edition • Global Warranty',
+          desc: f4,
+          partnerNote: f5 || 'High-demand flagship offering.',
+          gradient: idx >= 0 && flagshipProducts[idx] ? flagshipProducts[idx].gradient : 'linear-gradient(135deg, #0B1220 0%, #004578 65%, #0078D4 100%)',
+          url: fUrl
+        };
+        if (idx >= 0) flagshipProducts[idx] = prodObj;
+        else flagshipProducts.unshift(prodObj);
+      }
+
+      closeItemModal();
+      saveAllPortfolioEdits(true);
+      renderAllSections();
+      showToast('Portfolio Updated', 'Your changes have been saved and published.');
+    }
+
+    function deletePortfolioItem(type, index) {
+      if (currentSessionRole !== 'partner') return;
+      if (type === 'brand') brandHouses.splice(index, 1);
+      else if (type === 'product') flagshipProducts.splice(index, 1);
+
+      saveAllPortfolioEdits(true);
+      renderAllSections();
+      showToast('Item Removed', 'The selected card has been removed from your portfolio.');
+    }
+
+    // -----------------------------------------------------------------------
+    // E. 3-LEVEL HIERARCHICAL DRILL-DOWN: INDUSTRY -> BRANDS -> PRODUCTS
+    // -----------------------------------------------------------------------
+    function formatDisplayHost(url) {
+      return url.replace('https://www.', '').replace('https://', '').replace(/\/$/, '');
+    }
+
+    function escapeAttr(str) {
+      return String(str || '').replace(/'/g, "\\'").replace(/"/g, '&quot;');
+    }
+
+    function openOfficialBrand(event, url, brandName, itemTitle) {
+      if (isEditModeActive) {
+        event.preventDefault();
+        showToast('Edit Mode Active', 'Click the "Edit" button on the card to modify it, or turn off Edit Mode to visit links.');
+        return;
+      }
+
+      var banner = document.getElementById('brandLaunchBanner');
+      var titleEl = document.getElementById('brandLaunchTitle');
+      var urlEl = document.getElementById('brandLaunchUrlDisplay');
+      var anchorEl = document.getElementById('brandLaunchDirectAnchor');
+
+      if (banner && titleEl && anchorEl) {
+        titleEl.textContent = 'Opening ' + brandName + ' (' + itemTitle + ')';
+        if (urlEl) urlEl.textContent = url;
+        anchorEl.href = url;
+        banner.style.display = 'flex';
+
+        if (launchBannerTimer) clearTimeout(launchBannerTimer);
+        launchBannerTimer = setTimeout(function () {
+          banner.style.display = 'none';
+        }, 9000);
+      }
+
+      try {
+        window.open(url, '_blank', 'noopener,noreferrer');
+      } catch (err) {}
+    }
+
+    function hideBrandLaunchBanner() {
+      var banner = document.getElementById('brandLaunchBanner');
+      if (banner) banner.style.display = 'none';
+    }
+
+    function goToIndustriesLevel() {
+      explorerLevel = 'industries';
+      selectedIndustryName = '';
+      selectedBrandName = '';
+      renderIndustryExplorer();
+    }
+
+    function selectIndustryLevel(industryName) {
+      explorerLevel = 'brands';
+      selectedIndustryName = industryName;
+      selectedBrandName = '';
+      renderIndustryExplorer();
+      var sec = document.getElementById('industry-explorer');
+      if (sec) sec.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+
+    function selectBrandLevel(brandName) {
+      explorerLevel = 'products';
+      selectedBrandName = brandName;
+      renderIndustryExplorer();
+      var sec = document.getElementById('industry-explorer');
+      if (sec) sec.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+
+    function renderIndustryExplorer() {
+      var breadcrumbsEl = document.getElementById('explorerBreadcrumbs');
+      var backActionEl = document.getElementById('explorerBackAction');
+      var stageEl = document.getElementById('industryExplorerStage');
+      var titleEl = document.getElementById('explorerMainTitle');
+      var hintEl = document.getElementById('explorerMainHint');
+
+      if (!breadcrumbsEl || !backActionEl || !stageEl) return;
+
+      // 1. Breadcrumb Trail & Back Button
+      if (explorerLevel === 'industries') {
+        breadcrumbsEl.innerHTML = '<span class="crumb-current">All Industries (6 Core Sectors)</span>';
+        backActionEl.innerHTML = '';
+        if (titleEl) titleEl.textContent = 'Industry Portfolio Explorer';
+        if (hintEl) hintEl.textContent = 'Click an Industry below to view its Brands, then click a Brand to explore its Products';
+      } else if (explorerLevel === 'brands') {
+        breadcrumbsEl.innerHTML =
+          '<button type="button" class="crumb-btn" onclick="goToIndustriesLevel()">All Industries</button>' +
+          '<span>&rsaquo;</span>' +
+          '<span class="crumb-current">' + selectedIndustryName + ' (Brands)</span>';
+        backActionEl.innerHTML =
+          '<button type="button" class="btn-back-level" onclick="goToIndustriesLevel()">&larr; Back to Industries</button>';
+        if (titleEl) titleEl.textContent = selectedIndustryName + ' — Brands';
+        if (hintEl) hintEl.textContent = 'Click any Brand card below to inspect its signature Products, or open its official website';
+      } else {
+        breadcrumbsEl.innerHTML =
+          '<button type="button" class="crumb-btn" onclick="goToIndustriesLevel()">All Industries</button>' +
+          '<span>&rsaquo;</span>' +
+          '<button type="button" class="crumb-btn" onclick="selectIndustryLevel(\'' + escapeAttr(selectedIndustryName) + '\')">' + selectedIndustryName + '</button>' +
+          '<span>&rsaquo;</span>' +
+          '<span class="crumb-current">' + selectedBrandName + ' (Products)</span>';
+        backActionEl.innerHTML =
+          '<button type="button" class="btn-back-level" onclick="selectIndustryLevel(\'' + escapeAttr(selectedIndustryName) + '\')">&larr; Back to ' + selectedIndustryName + ' Brands</button>';
+        if (titleEl) titleEl.textContent = selectedBrandName + ' — Signature Products';
+        if (hintEl) hintEl.textContent = 'Click any Product to launch its official site or tap WhatsApp Inquiry';
+      }
+
+      // 2. Render Active Level Content
+      if (explorerLevel === 'industries') {
+        stageEl.innerHTML =
+          '<div class="category-grid">' +
+          INDUSTRIES.map(function (ind) {
+            var matchingBrands = brandHouses.filter(function (b) { return b.industry === ind.name; });
+            var brandNamesList = matchingBrands.map(function (b) { return b.name; }).join(', ');
+
+            return (
+              '<div class="cat-card-shell" style="cursor:pointer;" onclick="selectIndustryLevel(\'' + escapeAttr(ind.name) + '\')">' +
+                '<div class="cat-card-link">' +
+                  '<div>' +
+                    '<div class="cat-card-top">' +
+                      '<div class="cat-icon-box">' + ind.icon + '</div>' +
+                      '<span class="cat-badge">' + matchingBrands.length + ' Brands</span>' +
+                    '</div>' +
+                    '<h3>' + ind.name + '</h3>' +
+                    '<div class="cat-brand">' + (brandNamesList || ind.badge) + '</div>' +
+                    '<p class="cat-desc">' + ind.subtitle + '</p>' +
+                  '</div>' +
+                  '<div class="cat-footer">' +
+                    '<span>Explore ' + ind.name + ' Brands</span>' +
+                    '<span>View Brands &rarr;</span>' +
+                  '</div>' +
+                '</div>' +
+              '</div>'
+            );
+          }).join('') +
+          '</div>';
+      } else if (explorerLevel === 'brands') {
+        var indexedBrands = brandHouses
+          .map(function (b, idx) { return { item: b, idx: idx }; })
+          .filter(function (entry) { return entry.item.industry === selectedIndustryName; });
+
+        stageEl.innerHTML =
+          '<div class="brands-grid">' +
+          indexedBrands.map(function (entry) {
+            var b = entry.item;
+            var idx = entry.idx;
+            var prodCount = flagshipProducts.filter(function (p) { return p.brand === b.name; }).length;
+
+            var partnerPill = currentSessionRole === 'partner'
+              ? '<div class="brand-partner-pill"><strong>B2B Note:</strong> ' + b.partnerNote + '</div>'
+              : '';
+
+            var editToolbar = currentSessionRole === 'partner'
+              ? '<div class="card-edit-toolbar">' +
+                  '<button type="button" onclick="event.stopPropagation(); openItemModal(\'brand\', ' + idx + ')" class="btn-card-edit">Edit</button>' +
+                  '<button type="button" onclick="event.stopPropagation(); deletePortfolioItem(\'brand\', ' + idx + ')" class="btn-card-del">Delete</button>' +
+                '</div>'
+              : '';
+
+            return (
+              '<div class="brand-card-shell" style="cursor:pointer;" onclick="selectBrandLevel(\'' + escapeAttr(b.name) + '\')">' +
+                editToolbar +
+                '<div class="brand-card-link">' +
+                  '<div>' +
+                    '<div class="brand-card-top">' +
+                      '<div class="brand-monogram">' + getBrandLogoSvg(b.name, b.monogram) + '</div>' +
+                      '<span class="brand-origin-tag">' + b.origin + '</span>' +
+                    '</div>' +
+                    '<h3>' + b.name + '</h3>' +
+                    '<p>' + b.summary + '</p>' +
+                    partnerPill +
+                  '</div>' +
+                  '<div class="brand-card-footer">' +
+                    '<span>View Products (' + prodCount + ') &rarr;</span>' +
+                    '<a href="' + b.url + '" target="_blank" rel="noopener noreferrer" ' +
+                      'onclick="event.stopPropagation(); openOfficialBrand(event, \'' + escapeAttr(b.url) + '\', \'' + escapeAttr(b.name) + '\', \'Official Brand Portal\')" ' +
+                      'style="color: var(--ms-subtle); text-decoration: underline;">' +
+                      'Official Site &nearr;' +
+                    '</a>' +
+                  '</div>' +
+                '</div>' +
+              '</div>'
+            );
+          }).join('') +
+          '</div>';
+      } else {
+        var indexedProducts = flagshipProducts
+          .map(function (p, idx) { return { item: p, idx: idx }; })
+          .filter(function (entry) { return entry.item.brand === selectedBrandName; });
+
+        stageEl.innerHTML =
+          '<div class="products-grid">' +
+          indexedProducts.map(function (entry) {
+            var item = entry.item;
+            var idx = entry.idx;
+
+            var partnerHtml = currentSessionRole === 'partner'
+              ? '<div class="partner-insight-box">' +
+                  '<span>Partner B2B Strategy &amp; Margin Note</span>' +
+                  '<p>' + item.partnerNote + '</p>' +
+                '</div>'
+              : '';
+
+            var editToolbar = currentSessionRole === 'partner'
+              ? '<div class="card-edit-toolbar">' +
+                  '<button type="button" onclick="openItemModal(\'product\', ' + idx + ')" class="btn-card-edit">Edit</button>' +
+                  '<button type="button" onclick="deletePortfolioItem(\'product\', ' + idx + ')" class="btn-card-del">Delete</button>' +
+                '</div>'
+              : '';
+
+            return (
+              '<div class="product-card-shell">' +
+                editToolbar +
+                '<a href="' + item.url + '" target="_blank" rel="noopener noreferrer" ' +
+                'onclick="openOfficialBrand(event, \'' + escapeAttr(item.url) + '\', \'' + escapeAttr(item.brand) + '\', \'' + escapeAttr(item.title) + '\')" ' +
+                'class="product-card-link">' +
+                  '<div>' +
+                    '<div class="product-banner" style="background:' + item.gradient + ';">' +
+                      '<div class="product-banner-top">' +
+                        '<span class="product-brand-tag">' + item.brand + '</span>' +
+                        '<span class="product-site-tag">' + formatDisplayHost(item.url) + ' &nearr;</span>' +
+                      '</div>' +
+                      '<div class="product-spec-line">' + item.spec + '</div>' +
+                    '</div>' +
+                    '<div class="product-body">' +
+                      '<h3>' + item.title + '</h3>' +
+                      '<p>' + item.desc + '</p>' +
+                      partnerHtml +
+                    '</div>' +
+                  '</div>' +
+                  '<div class="product-footer">' +
+                    '<span class="visit-link-text">Official Website &nearr;</span>' +
+                    '<button type="button" onclick="event.preventDefault(); event.stopPropagation(); inquireProductOnWhatsApp(\'' + escapeAttr(item.title) + '\', \'' + escapeAttr(item.brand) + '\');" class="btn-wa-mini">' +
+                      'WhatsApp Inquiry' +
+                    '</button>' +
+                  '</div>' +
+                '</a>' +
+              '</div>'
+            );
+          }).join('') +
+          '</div>';
+      }
+    }
+
+    function renderAllSections() {
+      renderIndustryExplorer();
+    }
+
+    // -----------------------------------------------------------------------
+    // F. SELF-CONTAINED HTML5 CANVAS 3D PLANET EARTH + BLINKING COUNTRIES
+    // -----------------------------------------------------------------------
+    var GLOBAL_MARKETS = [
+      {
+        name: 'India',
+        region: 'South Asia Hub',
+        lat: 28.61,
+        lon: 77.21,
+        detail: 'Primary executive operations base for luxury watches, health & wellness technology, water & air purification, and global business expansion.'
+      },
+      {
+        name: 'Switzerland',
+        region: 'European Horology & Skincare',
+        lat: 47.14,
+        lon: 7.25,
+        detail: 'Home of Bernhard H. Mayer, Cimier, Mugnier watchmaking ateliers, and Physio Radiance Swiss skincare laboratories.'
+      },
+      {
+        name: 'UAE',
+        region: 'Middle East Luxury Hub',
+        lat: 25.20,
+        lon: 55.27,
+        detail: 'Dubai & Abu Dhabi executive distribution corridor for limited-edition timepieces and luxury hospitality.'
+      },
+      {
+        name: 'Germany',
+        region: 'R&D & Engineering',
+        lat: 50.11,
+        lon: 8.68,
+        detail: 'European wellness research and NSF-certified residential water and air purification engineering.'
+      },
+      {
+        name: 'UK',
+        region: 'Executive Education',
+        lat: 51.51,
+        lon: -0.13,
+        detail: 'London digital leadership network and CPD-accredited executive education programs via qLearn.'
+      },
+      {
+        name: 'Singapore',
+        region: 'ASEAN Commercial Gateway',
+        lat: 1.35,
+        lon: 103.82,
+        detail: 'Asia-Pacific logistics, hospitality resort network coordination, and digital partner operations.'
+      },
+      {
+        name: 'USA',
+        region: 'North America Market',
+        lat: 40.71,
+        lon: -74.01,
+        detail: 'Global travel portal alliances and international e-commerce distribution channels.'
+      },
+      {
+        name: 'Australia',
+        region: 'Oceania Wellness & Travel',
+        lat: -33.87,
+        lon: 151.21,
+        detail: 'Active lifestyle wellness adoption and QVI resort network destinations across Sydney and Gold Coast.'
+      },
+      {
+        name: 'Japan',
+        region: 'East Asia Precision & Tech',
+        lat: 35.68,
+        lon: 139.65,
+        detail: 'Advanced bio-wellness research collaboration and luxury horology collector community.'
+      },
+      {
+        name: 'South Africa',
+        region: 'Southern Africa Hub',
+        lat: -26.20,
+        lon: 28.05,
+        detail: 'Rapidly expanding business development partner network across Johannesburg and Cape Town.'
+      }
+    ];
+
+    var CONTINENT_POLYGONS = [
+      [[-168, 66], [-145, 70], [-115, 72], [-85, 70], [-62, 54], [-68, 44], [-76, 35], [-81, 25], [-90, 21], [-97, 26], [-105, 20], [-114, 31], [-124, 42], [-136, 57], [-156, 60]],
+      [[-52, 60], [-36, 65], [-20, 72], [-24, 82], [-48, 81], [-58, 74]],
+      [[-78, 10], [-62, 10], [-50, 1], [-35, -6], [-39, -18], [-48, -28], [-58, -38], [-67, -54], [-74, -48], [-72, -30], [-81, -6]],
+      [[-9, 37], [3, 43], [8, 45], [15, 44], [24, 38], [29, 42], [42, 46], [52, 56], [42, 66], [28, 70], [12, 65], [5, 59], [-4, 52], [-8, 43]],
+      [[-16, 15], [-6, 35], [10, 37], [25, 32], [33, 30], [43, 12], [51, 11], [41, -4], [36, -18], [28, -33], [18, -34], [14, -22], [12, -6], [8, 4], [-5, 5], [-16, 11]],
+      [[28, 42], [45, 42], [65, 56], [85, 72], [118, 73], [155, 67], [174, 64], [160, 54], [142, 44], [132, 34], [121, 24], [109, 18], [103, 2], [98, 16], [88, 22], [78, 8], [72, 20], [62, 25], [54, 24], [44, 13], [36, 33]],
+      [[130, 31], [137, 35], [141, 41], [145, 44], [140, 44], [134, 36]],
+      [[96, 4], [106, -6], [118, -8], [132, -6], [140, -4], [136, 1], [116, 3], [102, 1]],
+      [[114, -22], [126, -14], [136, -13], [144, -15], [153, -27], [149, -37], [138, -35], [128, -32], [115, -34]],
+      [[-180, -72], [-120, -74], [-60, -70], [0, -71], [60, -70], [120, -73], [180, -72], [180, -89], [-180, -89]]
+    ];
+
+    var earthRotLon = -77 * (Math.PI / 180);
+    var earthRotLat = 20 * (Math.PI / 180);
+    var targetEarthLon = earthRotLon;
+    var targetEarthLat = earthRotLat;
+    var selectedMarketIdx = 0;
+    var isDraggingEarth = false;
+    var dragStartX = 0;
+    var dragStartY = 0;
+    var earthStars = [];
+
+    for (var s = 0; s < 140; s++) {
+      earthStars.push({
+        x: Math.random(),
+        y: Math.random(),
+        r: 0.5 + Math.random() * 1.3,
+        a: 0.25 + Math.random() * 0.65
+      });
+    }
+
+    function renderCountryPills() {
+      var wrap = document.getElementById('countryMarketPills');
+      if (!wrap) return;
+
+      wrap.innerHTML = GLOBAL_MARKETS.map(function (m, idx) {
+        var cls = idx === selectedMarketIdx ? 'country-pill-btn active' : 'country-pill-btn';
+        return (
+          '<button type="button" onclick="selectCountryHub(' + idx + ')" class="' + cls + '">' +
+            '<span class="cyan-dot"></span>' +
+            '<span>' + m.name + '</span>' +
+          '</button>'
+        );
+      }).join('');
+    }
+
+    function selectCountryHub(idx) {
+      var m = GLOBAL_MARKETS[idx];
+      if (!m) return;
+      selectedMarketIdx = idx;
+
+      var nameEl = document.getElementById('activeCountryName');
+      var detailEl = document.getElementById('activeCountryDetail');
+      if (nameEl) nameEl.textContent = m.name + ' — ' + m.region;
+      if (detailEl) detailEl.textContent = m.detail;
+
+      targetEarthLon = -m.lon * (Math.PI / 180);
+      targetEarthLat = m.lat * (Math.PI / 180) * 0.72;
+      renderCountryPills();
+    }
+
+    function resetEarthView() {
+      selectCountryHub(0);
+    }
+
+    function projectSpherePoint(latDeg, lonDeg, rotLon, rotLat, cx, cy, R) {
+      var lat = latDeg * (Math.PI / 180);
+      var lon = lonDeg * (Math.PI / 180) + rotLon;
+
+      var x = Math.cos(lat) * Math.sin(lon);
+      var y = Math.sin(lat);
+      var z = Math.cos(lat) * Math.cos(lon);
+
+      var cosT = Math.cos(rotLat);
+      var sinT = Math.sin(rotLat);
+      var y2 = y * cosT - z * sinT;
+      var z2 = y * sinT + z * cosT;
+
+      return { x: cx + x * R, y: cy - y2 * R, z: z2 };
+    }
+
+    function resizeEarthCanvas() {
+      var canvas = document.getElementById('earthCanvas');
+      if (!canvas || !canvas.parentElement) return;
+      var dpr = Math.min(window.devicePixelRatio || 1, 2);
+      var w = canvas.parentElement.clientWidth || 600;
+      var h = canvas.parentElement.clientHeight || 400;
+      canvas.width = w * dpr;
+      canvas.height = h * dpr;
+    }
+
+    function initEarthInteraction() {
+      var canvas = document.getElementById('earthCanvas');
+      if (!canvas) return;
+
+      resizeEarthCanvas();
+      window.addEventListener('resize', resizeEarthCanvas);
+
+      canvas.addEventListener('mousedown', function (e) {
+        isDraggingEarth = true;
+        dragStartX = e.clientX;
+        dragStartY = e.clientY;
+      });
+
+      window.addEventListener('mousemove', function (e) {
+        if (!isDraggingEarth) return;
+        targetEarthLon += (e.clientX - dragStartX) * 0.008;
+        targetEarthLat = Math.max(-1.05, Math.min(1.05, targetEarthLat + (e.clientY - dragStartY) * 0.008));
+        dragStartX = e.clientX;
+        dragStartY = e.clientY;
+      });
+
+      window.addEventListener('mouseup', function () {
+        isDraggingEarth = false;
+      });
+
+      canvas.addEventListener('touchstart', function (e) {
+        if (e.touches.length === 1) {
+          isDraggingEarth = true;
+          dragStartX = e.touches[0].clientX;
+          dragStartY = e.touches[0].clientY;
+        }
+      }, { passive: true });
+
+      canvas.addEventListener('touchmove', function (e) {
+        if (!isDraggingEarth || e.touches.length !== 1) return;
+        targetEarthLon += (e.touches[0].clientX - dragStartX) * 0.008;
+        targetEarthLat = Math.max(-1.05, Math.min(1.05, targetEarthLat + (e.touches[0].clientY - dragStartY) * 0.008));
+        dragStartX = e.touches[0].clientX;
+        dragStartY = e.touches[0].clientY;
+      }, { passive: true });
+
+      canvas.addEventListener('touchend', function () {
+        isDraggingEarth = false;
+      });
+    }
+
+    function renderEarthFrame(timeMs) {
+      var canvas = document.getElementById('earthCanvas');
+      if (canvas) {
+        var ctx = canvas.getContext('2d');
+        var w = canvas.width;
+        var h = canvas.height;
+
+        if (w > 0 && h > 0) {
+          ctx.clearRect(0, 0, w, h);
+
+          for (var i = 0; i < earthStars.length; i++) {
+            var st = earthStars[i];
+            ctx.fillStyle = 'rgba(226, 232, 240, ' + st.a + ')';
+            ctx.beginPath();
+            ctx.arc(st.x * w, st.y * h, st.r, 0, Math.PI * 2);
+            ctx.fill();
+          }
+
+          var cx = w * 0.5;
+          var cy = h * 0.52;
+          var R = Math.min(w, h) * 0.37;
+
+          if (!isDraggingEarth) {
+            targetEarthLon += 0.0024;
+          }
+          earthRotLon += (targetEarthLon - earthRotLon) * 0.08;
+          earthRotLat += (targetEarthLat - earthRotLat) * 0.08;
+
+          var halo = ctx.createRadialGradient(cx, cy, R * 0.92, cx, cy, R * 1.24);
+          halo.addColorStop(0, 'rgba(56, 189, 248, 0.36)');
+          halo.addColorStop(0.55, 'rgba(0, 120, 212, 0.14)');
+          halo.addColorStop(1, 'rgba(0, 120, 212, 0)');
+          ctx.fillStyle = halo;
+          ctx.beginPath();
+          ctx.arc(cx, cy, R * 1.24, 0, Math.PI * 2);
+          ctx.fill();
+
+          ctx.save();
+          ctx.beginPath();
+          ctx.arc(cx, cy, R, 0, Math.PI * 2);
+          ctx.clip();
+
+          var ocean = ctx.createRadialGradient(cx - R * 0.34, cy - R * 0.34, R * 0.08, cx, cy, R * 1.05);
+          ocean.addColorStop(0, '#1D70B8');
+          ocean.addColorStop(0.5, '#0B468C');
+          ocean.addColorStop(0.86, '#062654');
+          ocean.addColorStop(1, '#031229');
+          ctx.fillStyle = ocean;
+          ctx.fillRect(cx - R, cy - R, R * 2, R * 2);
+
+          ctx.strokeStyle = 'rgba(125, 211, 252, 0.11)';
+          ctx.lineWidth = 1;
+          for (var latG = -60; latG <= 60; latG += 30) {
+            ctx.beginPath();
+            for (var lonStep = -180; lonStep <= 180; lonStep += 10) {
+              var gp = projectSpherePoint(latG, lonStep, earthRotLon, earthRotLat, cx, cy, R);
+              if (lonStep === -180) ctx.moveTo(gp.x, gp.y);
+              else ctx.lineTo(gp.x, gp.y);
+            }
+            ctx.stroke();
+          }
+
+          for (var c = 0; c < CONTINENT_POLYGONS.length; c++) {
+            var poly = CONTINENT_POLYGONS[c];
+            var frontCount = 0;
+            var pts = [];
+
+            for (var p = 0; p < poly.length; p++) {
+              var pt = projectSpherePoint(poly[p][1], poly[p][0], earthRotLon, earthRotLat, cx, cy, R);
+              if (pt.z > -0.08) frontCount++;
+              if (pt.z < 0) {
+                var dx = pt.x - cx;
+                var dy = pt.y - cy;
+                var dist = Math.sqrt(dx * dx + dy * dy) || 1;
+                pt.x = cx + (dx / dist) * R;
+                pt.y = cy + (dy / dist) * R;
+              }
+              pts.push(pt);
+            }
+
+            if (frontCount > 0 && pts.length > 2) {
+              ctx.beginPath();
+              ctx.moveTo(pts[0].x, pts[0].y);
+              for (var k = 1; k < pts.length; k++) {
+                ctx.lineTo(pts[k].x, pts[k].y);
+              }
+              ctx.closePath();
+
+              if (c === 1 || c === 9) {
+                ctx.fillStyle = 'rgba(226, 240, 255, 0.88)';
+                ctx.strokeStyle = 'rgba(255, 255, 255, 0.6)';
+              } else {
+                ctx.fillStyle = 'rgba(34, 139, 87, 0.90)';
+                ctx.strokeStyle = 'rgba(134, 239, 172, 0.45)';
+              }
+              ctx.lineWidth = 1.2;
+              ctx.fill();
+              ctx.stroke();
+            }
+          }
+
+          var cloudShift = timeMs * 0.00008;
+          ctx.fillStyle = 'rgba(255, 255, 255, 0.14)';
+          for (var cl = 0; cl < 14; cl++) {
+            var cLat = Math.sin(cl * 1.7) * 52;
+            var cLon = ((cl * 47) - 180) + (cloudShift * 180 / Math.PI);
+            var cp = projectSpherePoint(cLat, cLon, earthRotLon, earthRotLat, cx, cy, R);
+            if (cp.z > 0.15) {
+              ctx.beginPath();
+              ctx.ellipse(cp.x, cp.y, R * 0.22 * cp.z, R * 0.055 * cp.z, 0.2, 0, Math.PI * 2);
+              ctx.fill();
+            }
+          }
+
+          var shadowGrad = ctx.createRadialGradient(cx - R * 0.38, cy - R * 0.35, R * 0.3, cx + R * 0.25, cy + R * 0.25, R * 1.15);
+          shadowGrad.addColorStop(0, 'rgba(255, 255, 255, 0.08)');
+          shadowGrad.addColorStop(0.55, 'rgba(0, 0, 0, 0)');
+          shadowGrad.addColorStop(1, 'rgba(2, 6, 23, 0.72)');
+          ctx.fillStyle = shadowGrad;
+          ctx.fillRect(cx - R, cy - R, R * 2, R * 2);
+
+          ctx.restore();
+
+          ctx.strokeStyle = 'rgba(125, 211, 252, 0.42)';
+          ctx.lineWidth = 1.5;
+          ctx.beginPath();
+          ctx.arc(cx, cy, R, 0, Math.PI * 2);
+          ctx.stroke();
+
+          var pulsePhase = (timeMs || 0) * 0.0045;
+          for (var m = 0; m < GLOBAL_MARKETS.length; m++) {
+            var mk = GLOBAL_MARKETS[m];
+            var mp = projectSpherePoint(mk.lat, mk.lon, earthRotLon, earthRotLat, cx, cy, R);
+
+            if (mp.z > 0.05) {
+              var wave = (Math.sin(pulsePhase + m * 0.8) + 1) * 0.5;
+              var isSelected = m === selectedMarketIdx;
+              var ringRadius = (isSelected ? 11 : 7) + wave * 11;
+
+              ctx.beginPath();
+              ctx.arc(mp.x, mp.y, ringRadius, 0, Math.PI * 2);
+              ctx.fillStyle = isSelected
+                ? 'rgba(251, 191, 36, ' + (0.45 * (1 - wave * 0.75)) + ')'
+                : 'rgba(56, 189, 248, ' + (0.45 * (1 - wave * 0.75)) + ')';
+              ctx.fill();
+
+              ctx.beginPath();
+              ctx.arc(mp.x, mp.y, isSelected ? 4.8 : 3.6, 0, Math.PI * 2);
+              ctx.fillStyle = isSelected ? '#FBBF24' : '#38BDF8';
+              ctx.fill();
+              ctx.strokeStyle = '#FFFFFF';
+              ctx.lineWidth = 1.2;
+              ctx.stroke();
+
+              ctx.font = (isSelected ? '700 12px' : '600 11px') + ' "Segoe UI", sans-serif';
+              ctx.fillStyle = isSelected ? '#FDE68A' : '#E2E8F0';
+              ctx.fillText(mk.name, mp.x + 8, mp.y + 4);
+            }
+          }
+        }
+      }
+
+      requestAnimationFrame(renderEarthFrame);
+    }
+
+    // -----------------------------------------------------------------------
+    // G. WHATSAPP CONCIERGE (FROZEN FOR GUESTS, EDITABLE IN PARTNER VIEW)
+    // -----------------------------------------------------------------------
+    function updateDisplayedWhatsApp() {
+      var el = document.getElementById('displayWhatsAppNumber');
+      if (el) {
+        if (currentSessionRole === 'partner') {
+          el.textContent = '+' + targetWhatsApp;
+        } else {
+          // Display active verified executive routing cleanly without allowing edits
+          el.textContent = '+' + targetWhatsApp + ' (Verified Partner Line)';
+        }
+      }
+    }
+
+    function toggleWhatsAppEditor() {
+      if (currentSessionRole !== 'partner') {
+        showToast('Partner Access Required', 'WhatsApp routing number editing is locked in Guest Mode.');
+        return;
+      }
+      var ed = document.getElementById('whatsAppNumberEditor');
+      var inp = document.getElementById('customWhatsAppInput');
+      if (!ed) return;
+      var isHidden = ed.style.display === '' || ed.style.display === 'none';
+      ed.style.display = isHidden ? 'flex' : 'none';
+      if (isHidden && inp) {
+        inp.value = targetWhatsApp;
+        inp.focus();
+      }
+    }
+
+    function saveWhatsAppNumber() {
+      if (currentSessionRole !== 'partner') return;
+      var inp = document.getElementById('customWhatsAppInput');
+      if (!inp) return;
+      var digits = inp.value.replace(/\D/g, '');
+      if (digits.length < 8) {
+        showToast('Invalid WhatsApp Number', 'Please include country code (e.g. 919876543210).');
+        return;
+      }
+      targetWhatsApp = digits;
+      try { localStorage.setItem('sj_ms_whatsapp', digits); } catch (e) {}
+      updateDisplayedWhatsApp();
+      toggleWhatsAppEditor();
+      showToast('WhatsApp Number Saved', 'Guest and Partner inquiries will now route directly to +' + digits + '.');
+    }
+
+    function inquireProductOnWhatsApp(productTitle, brandName) {
+      var interest = document.getElementById('leadInterest');
+      var message = document.getElementById('leadMessage');
+      var section = document.getElementById('whatsapp-concierge');
+      var recipientLabel = activePartnerName === DEFAULT_WORKSPACE_IDENTITY
+        ? 'Team'
+        : (activePartnerName.split(/\s+/)[0] || 'Team');
+
+      if (interest) interest.value = 'Business Development Partnership (247+ Brands)';
+      if (message) {
+        message.value = 'Hello ' + recipientLabel + ', I would like executive details regarding "' + productTitle + '" by ' + brandName + '.';
+      }
+      if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+      }
+      showToast('Product Selected', 'Fill in your name & contact below to open WhatsApp directly.');
+    }
+
+    function handleWhatsAppSubmit(event) {
+      event.preventDefault();
+      var name = document.getElementById('leadName').value.trim();
+      var contact = document.getElementById('leadContact').value.trim();
+      var interest = document.getElementById('leadInterest').value;
+      var message = document.getElementById('leadMessage').value.trim();
+
+      var lines = [
+        '*Executive Portfolio Inquiry — ' + activePartnerName + '*',
+        '• *Name:* ' + name,
+        '• *Contact:* ' + contact,
+        '• *Interest:* ' + interest
+      ];
+      if (message) lines.push('• *Message:* ' + message);
+
+      var waUrl = 'https://wa.me/' + targetWhatsApp + '?text=' + encodeURIComponent(lines.join('\n'));
+      window.open(waUrl, '_blank', 'noopener,noreferrer');
+    }
+
+    function sharePortfolioLink() {
+      var url = window.location.href;
+      if (navigator.share) {
+        navigator.share({
+          title: activePartnerName + ' | Executive Partner Workspace',
+          text: 'Explore ' + activePartnerName + '’s Global Luxury Brand Portfolio (247+ Brands In-House).',
+          url: url
+        }).catch(function () {
+          copyToClipboard(url);
+        });
+      } else {
+        copyToClipboard(url);
+      }
+    }
+
+    function copyToClipboard(text) {
+      var ta = document.createElement('textarea');
+      ta.value = text;
+      document.body.appendChild(ta);
+      ta.select();
+      try {
+        document.execCommand('copy');
+        showToast('Portfolio Link Copied', 'Link copied to clipboard and ready to share.');
+      } catch (e) {
+        showToast('Share Link', text);
+      }
+      document.body.removeChild(ta);
+    }
+
+    function showToast(title, msg) {
+      var banner = document.getElementById('toastBanner');
+      var tEl = document.getElementById('toastTitle');
+      var mEl = document.getElementById('toastMessage');
+      if (!banner || !tEl || !mEl) return;
+
+      tEl.textContent = title;
+      mEl.textContent = msg;
+      banner.style.display = 'block';
+
+      if (toastTimer) clearTimeout(toastTimer);
+      toastTimer = setTimeout(function () {
+        banner.style.display = 'none';
+      }, 4200);
+    }
+
+    // -----------------------------------------------------------------------
+    // H. INITIALIZE ON DOM READY
+    // -----------------------------------------------------------------------
+    // H. INITIALIZE ON DOM READY OR IMMEDIATE IF ALREADY PARSED
+    // -----------------------------------------------------------------------
+    function bootWorkspaceApp() {
+      loadSavedPortfolioState();
+      updateDisplayedWhatsApp();
+      renderAllSections();
+      renderCountryPills();
+      initEarthInteraction();
+      requestAnimationFrame(renderEarthFrame);
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', bootWorkspaceApp);
+    } else {
+      bootWorkspaceApp();
+    }
+  </script>
+</body>
+</html>
